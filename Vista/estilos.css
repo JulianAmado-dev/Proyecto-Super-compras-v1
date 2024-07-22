@@ -1,0 +1,49 @@
+body{
+    background-color:   #DDBE96;
+    margin: auto;
+    padding: 0;
+    position: relative;
+}
+
+#headder{
+    background-color: rgb(23, 139, 101);
+    position: relative;
+    display: flex;
+    height:30%;
+    width: 100%;
+}
+
+#logo{
+    width: 25px;
+    height: 25px;
+
+}
+
+#barra_busqueda{
+    width: 35px;
+    height: 25px;
+
+}
+
+#crear_cuenta{
+    width: 10px;
+    height: 15px;
+
+}
+
+#iniciar_sesion{
+    width: 10px;
+    height: 25px;
+}
+#carrito{
+    width: 20px;
+    height: 10px;
+}
+
+#carrito_img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
