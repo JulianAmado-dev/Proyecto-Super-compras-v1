@@ -7,8 +7,8 @@ body{
     width: 100%;
 }
 
-#headder{
-    background-color: rgb(23, 139, 101);
+header{
+    background-color: #004d29;
     position: relative;
     display: flex;
     height: 70px;
@@ -112,7 +112,7 @@ body{
     width: 10%;
     height: 4%;
     left:7%;
-    top:3%;
+    top:10%;
     background-color: #b97c2c;
     border-radius: 30px;
 
@@ -184,24 +184,44 @@ body{
 
 .productos{
     position: absolute;
+    top:10%;
     height: 20%;
     width: 18%;
     background-color: #000000;
-
+    display: none;
 }
 
-#footer{
-    background-color: rgb(23, 139, 101);
+footer{
+    background-color: #004d29;
     width: 100%;
-    height: 100px;
+    height: 35%;
     position: absolute;
     top: 100%;
 }
 
-#contenido_footer{
+.bloques_footer{
     position: absolute;
-    width: 100%;
-    height: 10%;
-    top: 100%;
-    
+    width: 20%;
+    height: 70%;
+    display: inline-block;
+    top:10%;
+    font-family: 'Courier New', Courier, monospace ;
+    color:#bc8741;
+    text-align: center;
+
+}
+
+.bloques_footer >p{
+    color: gray;
+}
+#targeta_footer{
+    left: 10%;
+}
+
+#caja_footer{
+    left: 40%;
+}
+
+#escudo_footer{
+    left: 70%;
 }

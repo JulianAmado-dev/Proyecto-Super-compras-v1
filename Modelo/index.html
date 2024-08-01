@@ -7,7 +7,7 @@
             <link rel="stylesheet" href="/Users/Aprendiz/Documents/Proyecto Supercompras/Pantallas html/Vista/estilos.css">
         </head>
         <body>  
-            <div id="headder">
+            <header>
                 <img src="logo.png" id="logo">
                 <div id="barra_busqueda">
                     <div id="contenido_barra_busqueda">Buscar</div>
@@ -25,13 +25,15 @@
                             <div id="contenido_bola">0</div>
                         </div>
                 </div>
-            </div>
+            </header>
+            
+            <nav id="barra_categorias">
+                <div id="texto_titulo_categorias">categorias</div>
+                    <div id="flecha_menu_desplegable"></div>        
+            </nav> 
+
+            <section id="container">
                 
-            <div id="container">
-                <div id="barra_categorias">
-                    <div id="texto_titulo_categorias">categorias</div>
-                        <div id="flecha_menu_desplegable"></div>        
-                </div> 
                 <div id="banner">
                     <img src="verduras recortada.jpg" id="fondo_banner">
                         <div id="contenido_banner">ingresa al mundo del mercar rapido</div>
@@ -40,13 +42,23 @@
                 <div id="ofertas"></div>
                 <div class="productos">
                 </div> 
-
-            </div>    
+            </section>    
                  
-            
-            
-            <div id="footer"></div>
-                <div id="contenido_footer">textodeejemplo</div>
+            <footer>
+                <div class= "bloques_footer" id="targeta_footer">
+                    <h1>Paga con targeta o en efectivo</h1>
+                    <p>Con Mercado Pago, paga en cuotas y aprovecha la comodidad de financiación que te da tu banco, o hazlo con efectivo en puntos de pago. ¡Y siempre es seguro!</p>                    
+                </div>
 
+                <div class= "bloques_footer" id="caja_footer">
+                    <h1>Envío gratis desde $ 100.000</h1>
+                    <p>Con solo estar registrado en Supercompras, tienes envíos gratis en miles de productos seleccionados.</p>
+                </div>
+                <div class= "bloques_footer" id="escudo_footer">
+                    <h1>Seguridad, de principio a fin</h1>
+                    <p>¿No te gusta? ¡Devuélvelo! En Supercompras, no hay nada que no puedas hacer, porque estás siempre protegido.</p>
+                </div>
+ 
+            </footer>
         </body>
     </html>
