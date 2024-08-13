@@ -3,10 +3,13 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Super Compras</title>
+            <title>Informacion de la Cuenta</title>
             <link rel="stylesheet" href="/Users/Aprendiz/Documents/Proyecto Supercompras/Pantallas html/Vista/estilos.css">
+            <link rel="stylesheet" href="/Users/Aprendiz/Documents/Proyecto Supercompras/Pantallas html/Vista/estilosSesion.css">
+            <link rel="stylesheet" href="/Users/Aprendiz/Documents/Proyecto Supercompras/Pantallas html/Vista/estilosInfo.css">
         </head>
         <body>  
+
             <header>
                 <img src="logo.png" id="logo">
                 <div id="barra_busqueda">
@@ -29,19 +32,35 @@
             </header>
 
             <section id="container">
-                <nav id="barra_categorias">
-                    <div id="texto_titulo_categorias">categorias</div>
-                        <div id="flecha_menu_desplegable"></div>        
-                </nav>
-                <img id="banner">
-                    <img src="verduras recortada.jpg" id="fondo_banner">
-                        <div id="contenido_banner">Ingresa al mundo del mercar rápido</div>
+                <div class="gran_bloque" id="bloque_info">
+                    
+                    <div id="titulo_info">Informacion de la cuenta</div>
+                    <div class="linea_sesion_crear"></div>
+
+                    <div class="titulos_iniciar_crear" id="info_titulo_nombre">Nombre</div>
+                    <div class="barras_iniciar_crear" id="info_barra_nombre"></div>
+                    
+                    <div class="titulos_iniciar_crear" id="info_titulo_apellidos">Apellidos</div>
+                    <div class="barras_iniciar_crear" id="info_barra_apellidos"></div>
+                    
+                    <div class="titulos_iniciar_crear" id="info_titulo_correo">Correo Electronico</div>
+                    <div class="barras_iniciar_crear" id="info_barra_correo"></div>
+                    
+                    <div class="titulos_iniciar_crear" id="info_titulo_direccion">Dirección</div>
+                    <div class="barras_iniciar_crear" id="info_barra_direccion"></div>
+                    
+                    <div class="titulos_iniciar_crear" id="info_titulo_contrasena">Contraseña</div>
+                    <div class="barras_iniciar_crear" id="info_barra_contrasena"></div>
+
+                    <div class="titulos_iniciar_crear" id="info_titulo_codigo">Codigo de empleado</div>
+                    <div class="barras_iniciar_crear" id="info_barra_codigo"></div>
+
+
+                    <div class="boton" id="boton_guardar">Guardar Cambios</div>
+
                 </div>
-                <div id="titulo_ofertas"> productos en oferta </div>
-                <div id="ofertas"></div>
-                <div class="productos"></div> 
-            </section>    
-                 
+            </section>
+
             <footer>
                 <div class= "bloques_footer" id="targeta_footer">
                     <h1>Paga con targeta o en efectivo</h1>

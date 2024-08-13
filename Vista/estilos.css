@@ -1,5 +1,5 @@
 body{
-    background-color: #DDBE96;
+    background-color: #e5c499;
     margin: auto;
     padding: 0;
     position: absolute;
@@ -7,6 +7,7 @@ body{
     width: 100%;
 }
 
+/*********************************** HEADER ***************************************************/
 header{
     background-color: #004d29;
     position: relative;
@@ -26,15 +27,14 @@ header{
     width: 250px;
     height: 50px;
     top: 10px;
-    left: 100px;
-    
+    left: 100px;   
 }
 
 #barra_busqueda{
     position: absolute;
     width: 50%;
     height: 50%;
-    background-color: #DDBE96;
+    background-color: #e5c499;
     top:17px;
     left: 400px;
     border-radius: 30px;
@@ -42,10 +42,19 @@ header{
 
 #contenido_barra_busqueda{
     position: absolute;
-    left:3%;
+    left:1%;
     top:20%;
     font-size: larger;
     font-family: 'Courier New', Courier, monospace ;
+}
+
+#busqueda{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    border-radius: 30px;
+    height: 85%;
+    background-color: #e5c499;
 }
 
 #crear_cuenta{
@@ -56,6 +65,8 @@ header{
     top:20%;
     font-size: larger;
     font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    font-weight: bolder;
 }
 
 #iniciar_sesion{
@@ -66,6 +77,8 @@ header{
     top:20%;
     font-size: larger;
     font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    font-weight: bolder;
 }
 
 #carrito{
@@ -86,13 +99,12 @@ header{
 
 #ico_cantidad_productos_carro{
     position: absolute;
-    background-color:#DDBE96 ;
+    background-color:#e5c499 ;
     width: 40%;
     height: 50%;
     border-radius: 50%;
     top:100%;
-    left:320%
-    
+    left:320%    
 }
 
 #contenido_bola{
@@ -101,10 +113,11 @@ header{
     font-family: 'Courier New', Courier, monospace;
 }
 
+/************************************CONTAINER********************************************/
 #container{
     width: 100%;
-    height: 91%; 
-
+    height: 91%;
+    
 }
 
 #barra_categorias{
@@ -112,8 +125,8 @@ header{
     width: 10%;
     height: 4%;
     left:7%;
-    top:10%;
-    background-color: #b97c2c;
+    top:3%;
+    background-color: #c29861;
     border-radius: 30px;
 
 }
@@ -123,8 +136,10 @@ header{
     height:100% ;
     left:7%;
     font-size: larger;
-    top: 13%;
+    font-weight: bolder;
+    top: 20%;
     font-family: 'Courier New', Courier, monospace;
+    color: #79572c;
 }
 
 #flecha_menu_desplegable{
@@ -133,10 +148,10 @@ header{
     height: 0%;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 18px solid rgb(214, 175, 103);
+    border-top: 18px solid;
     left: 75%;
-    top:30%;
-
+    top: 30%;
+    color: #79572c;
 }
 
 #fondo_banner{
@@ -149,12 +164,12 @@ header{
 
 #contenido_banner{
     position: absolute;
-    left:30%;
+    left:20%;
     top:23%;
     font-family: 'Courier New', Courier, monospace;
-    width: 50%;
+    width: 80%;
     height: 10%;
-    font-size: xx-large;
+    font-size: 350%;
     color: rgb(255, 227, 133);
     font-weight: bolder;
 
@@ -165,8 +180,8 @@ header{
     height: 5%;
     width: 20%;
     left: 40%;
-    top: 43%;
-    font-size: xx-large;
+    top: 45%;
+    font-size: 200%;
     font-weight: bolder;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(23, 139, 101);
@@ -174,10 +189,10 @@ header{
 
 #ofertas{
     position: absolute;
-    height: 25%;
+    height: 30%;
     width: 90%;
-    background-color: #b97c2c;
-    top: 50%;
+    background-color: #c29861;
+    top: 55%;
     left: 5%;
 
 }
@@ -191,6 +206,7 @@ header{
     display: none;
 }
 
+/**************************************************FOOTER************************************/
 footer{
     background-color: #004d29;
     width: 100%;
@@ -206,14 +222,15 @@ footer{
     display: inline-block;
     top:10%;
     font-family: 'Courier New', Courier, monospace ;
-    color:#bc8741;
+    color:#c29861;
     text-align: center;
 
 }
 
 .bloques_footer >p{
-    color: gray;
+    color: rgb(158, 158, 158);
 }
+
 #targeta_footer{
     left: 10%;
 }
