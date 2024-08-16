@@ -47,31 +47,14 @@ header{
     background-color: #d4d0ca;
 }
 
-.
 
-#crear_cuenta{
-    position: absolute;
-    width: 6%;
-    height: 80%;
-    left: 77%;
-    top:20%;
+.crear_iniciar{
     font-size: larger;
     font-family: 'Courier New', Courier, monospace;
     color: aliceblue;
     font-weight: bolder;
 }
 
-#iniciar_sesion{
-    position: absolute;
-    width: 4%;
-    height: 80%;
-    left: 85%;
-    top:20%;
-    font-size: larger;
-    font-family: 'Courier New', Courier, monospace;
-    color: aliceblue;
-    font-weight: bolder;
-}
 
 #carrito{
     position: absolute;
