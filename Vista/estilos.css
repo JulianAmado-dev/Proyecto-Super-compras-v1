@@ -111,7 +111,7 @@ header{
 }
 
 /************************************CONTAINER********************************************/
-#container{
+.container{
     position: relative;
     height: 100%;
     width: 100%;
@@ -204,13 +204,59 @@ header{
 }
 /********************************DETALLES DE PRODUCTO************/
 
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+#producto_principal{
+    position: relative;
+    background-color: papayawhip;
+    width: 100%;
+    height: 50%;
+
+
+}
+#bloque_comprar_anadir_a_cesta{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: 20%;
+    background-color: #0ce27e;
+    left: 60%;
+    top: 40%;
+    border-radius: 25px;
+
+}
+.bloque_cantidad{
+    position: absolute;
+    
+}
+.botones_cantidad{
+    
+}
+#bloque_productos_similares{
+    position: relative;
+    background-color: #e5c499;
+    width: 50%;
+    height: 30vh;
+
+}
+
+
+
+
+
+
 /**************************************************FOOTER************************************/
 footer{
     background-color: #004d29;
     width: 100%;
     height: 35%;
-    position: absolute;
-    top: 100%;
+    position: relative;
 }
 
 .bloques_footer{
