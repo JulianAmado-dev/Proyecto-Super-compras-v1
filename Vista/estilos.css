@@ -5,11 +5,15 @@
 }
 
 body{
-    background-color: #e5c499;
+    background-color: rgba(255, 255, 255);
+    background-image: url(/Assets/fondo_container_transparente.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     position: relative;
     height: 100vh;
     width: 100%;
 }
+
 
 /*********************************** HEADER ***************************************************/
 header{
@@ -39,7 +43,7 @@ header{
     width: 25%;
     height: 40px;
     border-radius: 30px;
-    margin-left: 140px;
+    margin-left: 283px;
 }
 
 #busqueda_input{
@@ -59,7 +63,7 @@ header{
     height: 30px;
     border: 1px solid #c29861;
     border-radius: 10px;
-    left: 420px;
+    left: 88%;
     top: 5px;
     background-size: 50px 30px;
 }
@@ -69,13 +73,18 @@ header{
     font-family: 'Courier New', Courier, monospace;
     color: aliceblue;
     font-weight: bolder;
+    width: 93px;
+    text-align-last: center;
 }
 
+#mensaje_iniciar{
+    width: 85px;
+}
 #carrito{
     position: relative;
     width: 3%;
     height: 45%;
-    top:10%
+    top:3%
 }
 
 #carrito_img{
@@ -86,12 +95,14 @@ header{
 }
 
 #mensajeCarrito{
-    font-size: larger;
+    position: absolute;
     font-family: 'Courier New', Courier, monospace;
     color: aliceblue;
     font-weight: bolder;
     width: 100%;
     height: 30px;
+    top: 27px;
+    font-size: 1em;
 }
 
 #ico_cantidad_productos_carro{
@@ -109,25 +120,27 @@ header{
     top: 15%;
     font-family: 'Courier New', Courier, monospace;
 }
+/************************************NAV**************************************************/
 
-/************************************CONTAINER********************************************/
-.container{
+#nav{
     position: relative;
-    height: 100%;
+    display: flex;
     width: 100%;
+    height: 40px;
+    align-items: center ;
+
 }
 
-#barra_categorias{
+.barras{
     position: absolute;
-    width: 10%;
-    height: 4%;
-    left:7%;
-    top:3%;
-    background-color: #c29861;
-    border-radius: 30px;
-
+    width: 9%;
+    height: 90%;
+    background-color: #BC8741;
+    border-radius: 30px; 
+    margin-top: 5px;
 }
-#texto_titulo_categorias{
+
+.texto_barras_nav{
     position: absolute;
     width:100% ;
     height:100% ;
@@ -139,36 +152,77 @@ header{
     color: #79572c;
 }
 
-#flecha_menu_desplegable{
+.flecha_menu_desplegable{
     position: absolute;
     width: 0%;
     height: 0%;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 18px solid;
-    left: 75%;
-    top: 30%;
+    left: 81%;
+    top: 28%;
     color: #79572c;
 }
 
+#flecha_ofertas{
+    left: 75%;
+}
+
+#barra_categorias{
+    position: absolute;
+    left: 12%;
+    top: 2%;
+}
+
+#barra_ofertas{
+    position: absolute;
+    width: 7%;
+    left: 23%;
+    top: 2%;
+}
+
+#linea_separadora{
+    position: relative;
+    width: 70%;
+    height: 2px;
+    border: 2.5px solid #BC8741;
+    top: 29px;
+    left: 15%;
+}
+
+
+/************************************CONTAINER********************************************/
+#container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#banner{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    margin-top: 8.5px;
+    height: 308.5px;
+    justify-content: center;
+    align-items: center;
+}
 #fondo_banner{
     position: absolute;
     width: 90%;
-    height: 30%;
+    height: 300px;
     left:5%;
-    top:10%;
+    top:2.5%;
 }
 
 #contenido_banner{
     position: absolute;
-    left:20%;
-    top:23%;
     font-family: 'Courier New', Courier, monospace;
-    width: 80%;
+    width: 100%;
     height: 10%;
     font-size: 350%;
     color: rgb(255, 227, 133);
     font-weight: bolder;
+    text-align: center;
 
 }
 
@@ -192,7 +246,7 @@ header{
     top: 55%;
     left: 5%;
 
-}
+}   
 
 .productos{
     position: absolute;
@@ -204,6 +258,7 @@ header{
 }
 /********************************DETALLES DE PRODUCTO************/
 
+<<<<<<< HEAD
 .container{
     position: relative;
     width: 100%;
@@ -249,6 +304,8 @@ header{
 
 
 
+=======
+>>>>>>> 2cc9323edccc1636d23efd62dde11e323ec755c7
 
 
 /**************************************************FOOTER************************************/
