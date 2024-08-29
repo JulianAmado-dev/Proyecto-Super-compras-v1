@@ -258,21 +258,21 @@ header{
 }
 /********************************DETALLES DE PRODUCTO************/
 
-<<<<<<< HEAD
 .container{
     position: relative;
     width: 100%;
     height: 100vh;
     background-color: aliceblue;
 }
-
 #producto_principal{
     position: relative;
     background-color: papayawhip;
     width: 100%;
     height: 50%;
-
-
+}
+#linea_separadora_productos_similares{
+    position: absolute;
+    
 }
 #bloque_comprar_anadir_a_cesta{
     position: absolute;
@@ -280,18 +280,48 @@ header{
     justify-content: center;
     width: 30%;
     height: 20%;
-    background-color: #0ce27e;
+    background-color: #DDBE96;
     left: 60%;
     top: 40%;
     border-radius: 25px;
-
 }
 .bloque_cantidad{
     position: absolute;
-    
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;;
+}
+.bloque_cantidad h5{
+    padding: 17px;
 }
 .botones_cantidad{
-    
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #BC8741;
+    border: 1px solid #BC8741;
+}
+#container_comprar_añadir{
+    margin-top: 5%;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    left: 10%;  
+}
+#boton_comprar{
+    margin-top: 6%;
+}
+.botones_comprar_añadir{
+    background-color: #BC8741;
+    border: 1px solid #BC8741;
+    width: 80%;
+    padding: 5px;
+    margin-top: 8px;
+    height: 23%;
+    border-radius: 25px;
+    color: aliceblue;
 }
 #bloque_productos_similares{
     position: relative;
@@ -300,12 +330,6 @@ header{
     height: 30vh;
 
 }
-
-
-
-
-=======
->>>>>>> 2cc9323edccc1636d23efd62dde11e323ec755c7
 
 
 /**************************************************FOOTER************************************/
