@@ -256,7 +256,7 @@ header{
     background-color: #000000;
     display: none;
 }
-/********************************DETALLES DE PRODUCTO************/
+/********************************DETALLES DE PRODUCTO*****************/
 
 .container{
     position: relative;
@@ -264,25 +264,98 @@ header{
     height: 100vh;
     background-color: aliceblue;
 }
-#producto_principal{
+.container_producto_principal{
     position: relative;
-    background-color: papayawhip;
     width: 100%;
     height: 50%;
 }
+.producto_principal{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 35% 23% 4% 4%;
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 3%;
+    margin-left: 2.5%;
+    width: 90%;
+    height: 70%;
+}
+.producto_principal img{
+    grid-column: 1;
+    grid-row: 1/4;
+    background: #004d29;
+}
+.producto_principal h1{
+    font-family:"PT Sans", sans-serif;
+    font-weight: 700 ;
+    font-size: 5rem;
+    grid-column: 2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.producto_principal precio_sin_descuento{
+    font-family:"PT Sans", sans-serif;
+    font-size: 1.5rem;
+    grid-column: 3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 5%;
+}
+.producto_principal precio_sin_descuento{
+    font-family:"PT Sans", sans-serif;
+    font-size: 1.5rem;
+    grid-column: 3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 5%;
+}
+.dinero_pequeño{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 16%;
+}
+#precio_sin_descuento{
+    text-decoration: line-through;
+    font-size: 1.5rem;
+    
+}
+#porcentaje_descuento{
+    font-size: 1.5rem;
+    margin-left: 30%;
+}
+#descripcion_del_producto{
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+}
+.producto_principal h3{
+    font-family:"PT Sans", sans-serif;
+    grid-column: 2;
+    grid-row: 2/3;
+}
+.segunda_columna_grid{
+    margin-left: 15%;
+}
+
 #linea_separadora_productos_similares{
     position: absolute;
-    
+    border: 2px solid  #BC8741;
+    width: 45%;
+    left: 2.5%;
+    top: 100%;
 }
 #bloque_comprar_anadir_a_cesta{
     position: absolute;
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: 40%;
     height: 20%;
     background-color: #DDBE96;
-    left: 60%;
-    top: 40%;
+    left: 52.5%;
+    top: 50%;
     border-radius: 25px;
 }
 .bloque_cantidad{
@@ -295,6 +368,9 @@ header{
 }
 .bloque_cantidad h5{
     padding: 17px;
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
 }
 .botones_cantidad{
     width: 20px;
@@ -322,16 +398,34 @@ header{
     height: 23%;
     border-radius: 25px;
     color: aliceblue;
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 #bloque_productos_similares{
     position: relative;
-    background-color: #e5c499;
     width: 50%;
-    height: 30vh;
-
+    height: 40%;
 }
-
-
+#bloque_productos_similares h3{
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    margin-top: 4%;
+    font-weight: 100;
+    font-size: 2rem;
+}
+#cuadrilla{
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80% 10%;
+    padding: 5% 5% 0% 5%;
+}
+.caja_bloques{
+    margin: 5%;
+    background: #004d29;
+}
 /**************************************************FOOTER************************************/
 footer{
     background-color: #004d29;
@@ -339,7 +433,6 @@ footer{
     height: 35%;
     position: relative;
 }
-
 .bloques_footer{
     position: absolute;
     width: 20%;
