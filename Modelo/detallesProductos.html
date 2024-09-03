@@ -1,101 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link rel="stylesheet" href="/Vista/estilos.css">|  
-  </head>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalles del producto</title>
+  <link rel="stylesheet" href="/Vista/estilos.css">
+  <!-------------------------------------Fuentes------------------------------>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
   <body>
-    <header>
-      <div>
+    <!-------------------------------HEADER-------------------------------------------------------->
+    <header id="header">
+      <div id="logo_div">
+        <a href="" id="logo"></a>
       </div>
       <div id="barra_busqueda">
         <input type="text" placeholder="Buscar..." id="busqueda_input">
         <input class="icoLupaBuscar" type="button">
       </div>
       <div>
-        <h3 class="crear_iniciar">Crea tu cuenta</h3>
+        <h3 class="crear_iniciar">Crear tu cuenta</h3>
       </div>
 
       <div>
-        <h3 class="crear_iniciar">Inicia sesión</h3>
+        <h3 class="crear_iniciar" id="mensaje_iniciar">Iniciar sesión</h3>
       </div>
 
       <div id="carrito">
-        <img src="carrito.png" id="carrito_img">
-        <div id="mensajeCarrito">
-            <h3>Carrito</h3>
-        </div>
+        <img src="/Assets/carrito.svg" id="carrito_img">
         <div id="ico_cantidad_productos_carro">
           <div id="contenido_bola">0</div>
         </div>
+        <div id="mensajeCarrito">
+          <h3>Carrito</h3>
+        </div>
       </div>
     </header>
-    <section>
-      <nav id="barra_categorias">
-        <div id="texto_titulo_categorias">categorias</div>
-        <div id="flecha_menu_desplegable"></div>
-      </nav>
-    </section>
-
-<!--------------------BLOQUE DE PRODUCTO PRINCIPAL----------->
-    <section  class="container_producto_principal">
-      <div class="producto_principal">
-        <img src="" alt="" />
-        <h1 class="segunda_columna_grid">$ 12.320</h1>
-        <h3 class="segunda_columna_grid" id="descripcion_del_producto">Cubetas de huevos 6u AA<br>Marca kikes</h3>
-        <h4 class="dinero_pequeño" id="precio_sin_descuento">20.350</h4>
-        <h4 class="dinero_pequeño" id="porcentaje_descuento">-40%</h4>
-      
+    <!--------------------------------NAV----------------------------------------------------->
+    <nav id="nav">
+      <div id="linea_separadora1"></div>
+      <div id="barra_categorias" class="barras">
+        <h3 id="texto_titulo_categorias" class="texto_barras_nav">categorías</h3>
+        <div class="flecha_menu_desplegable"></div>
       </div>
-      <div id="linea_separadora_productos_similares"></div>
-    </section>
-<!---------------------BLOQUE COMPRAR-AÑADIR A LA CESTA------>
-<aside id="bloque_comprar_anadir_a_cesta">
-  <div class="bloque_cantidad">
-      <h5>Cantidad:</h5>
-      <button class="botones_cantidad">-</button>
-      <h5>1</h5>
-      <button class="botones_cantidad">+</button>
-  </div>
-  <div id="container_comprar_añadir">
-    <button id="boton_comprar" class="botones_comprar_añadir">Comprar</button>
-    <button class="botones_comprar_añadir">Añadir a la cesta</button>
-  </div>
-</aside>
-<!--------------------BLOQUE PRODUCTOS SIMILARES------------->
-    <section id="bloque_productos_similares">
-      <h3>Productos similares</h3>
-      <div id="cuadrilla">
-        <div class="caja_bloques">
-          <img class="imagenProductosSimilares" src="" alt="" />
-        </div>
-        <div class="caja_bloques">
-          <img class="imagenProductosSimilares" src="" alt="" />
-        </div>
-        <div class="caja_bloques">
-          <img class="imagenProductosSimilares" src="" alt="" />
-        </div>
+      <div id="barra_ofertas" class="barras">
+        <h3 id="texto_titulo_ofertas" class="texto_barras_nav">ofertas</h3>
+        <div class="flecha_menu_desplegable" id="flecha_ofertas"></div>
       </div>
+      <div id="linea_separadora2"></div>
+    </nav>
+
+    <section id="container">
+      <!--------------------BLOQUE DE PRODUCTO PRINCIPAL----------------------------------------->
+      <section class="container_producto_principal">
+        <div class="producto_principal">
+          <img src="" alt="" />
+          <h1 class="segunda_columna_grid">$ 12.320</h1>
+          <h3 class="segunda_columna_grid" id="descripcion_del_producto">Cubetas de huevos 6u AA<br>Marca kikes</h3>
+          <h4 class="dinero_pequeño" id="precio_sin_descuento">20.350</h4>
+          <h4 class="dinero_pequeño" id="porcentaje_descuento">-40%</h4>
+
+        </div>
+        <div id="linea_separadora_productos_similares"></div>
+      </section>
+      <!---------------------BLOQUE COMPRAR-AÑADIR A LA CESTA------>
+      <aside id="bloque_comprar_anadir_a_cesta">
+        <div class="bloque_cantidad">
+          <h5>Cantidad:</h5>
+          <button class="botones_cantidad">-</button>
+          <h5>1</h5>
+          <button class="botones_cantidad">+</button>
+        </div>
+        <div id="container_comprar_añadir">
+          <button id="boton_comprar" class="botones_comprar_añadir">Comprar</button>
+          <button class="botones_comprar_añadir">Añadir a la cesta</button>
+        </div>
+      </aside>
+      <!--------------------BLOQUE PRODUCTOS SIMILARES------------->
+      <section id="bloque_productos_similares">
+        <h3>Productos similares</h3>
+        <div id="cuadrilla">
+          <div class="caja_bloques">
+            <img class="imagenProductosSimilares" src="" alt="" />
+          </div>
+          <div class="caja_bloques">
+            <img class="imagenProductosSimilares" src="" alt="" />
+          </div>
+          <div class="caja_bloques">
+            <img class="imagenProductosSimilares" src="" alt="" />
+          </div>
+        </div>
+      </section>
     </section>
-
-
     <footer>
-      <div class= "bloques_footer" id="targeta_footer">
-          <h1>Paga con targeta o en efectivo</h1>
-          <p>Con Mercado Pago, paga en cuotas y aprovecha la comodidad de financiación que te da tu banco, o hazlo con efectivo en puntos de pago. ¡Y siempre es seguro!</p>                    
-      </div>
-
-      <div class= "bloques_footer" id="caja_footer">
-          <h1>Envío gratis desde $ 100.000</h1>
+        <div class="bloques_footer" id="tarjeta_footer">
+          <img src="/Assets/ico_tarjeta_footer.png" alt="Paga con tarjeta de credito o en efectivo">
+          <h2>Paga con tarjeta o en efectivo</h2>
+          <p>Con Super Compras Pago, paga en cuotas y aprovecha la comodidad de financiación que te da tu banco, o hazlo
+            con
+            efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </div>
+        <div class="bloques_footer" id="caja_footer">
+          <img src="/Assets/ico_cajas_footer.png" alt="envios gratis desde $100.000">
+          <h2>Envío gratis desde $100.000</h2>
           <p>Con solo estar registrado en Supercompras, tienes envíos gratis en miles de productos seleccionados.</p>
-      </div>
-      <div class= "bloques_footer" id="escudo_footer">
-          <h1>Seguridad, de principio a fin</h1>
-          <p>¿No te gusta? ¡Devuélvelo! En Supercompras, no hay nada que no puedas hacer, porque estás siempre protegido.</p>
-      </div> 
-  </footer>
-
+        </div>
+        <div class="bloques_footer" id="escudo_footer">
+          <img src="/Assets/ico_escudo_footer.png" alt="Seguridad de principio a fin">
+          <h2>Seguridad, de principio a fin</h2>
+          <p>¿No te gusta? ¡Devuélvelo! En Supercompras, no hay nada que no puedas hacer, porque estás siempre
+            protegido.</p>
+        </div>
+    </footer>
   </body>
 </html>

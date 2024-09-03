@@ -10,15 +10,13 @@ body{
     background-color: rgba(255, 255, 255);
     background-image: url(/Assets/fondo_container_transparente.svg);
     background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-repeat:repeat;
     position: relative;
     height: 100vh;
     width: 100%;
 }
-
-
 /*********************************** HEADER ***************************************************/
-header{
+#header{
     background-color: #004d29;
     position: relative;
     display: flex;
@@ -27,12 +25,10 @@ header{
     align-items: center;
     justify-content: space-evenly;
 }
-
 #logo_div{
     width: 276px;
     height: 70px;
 }
-
 #logo{
     position: absolute;
     background-image: url(/Assets/logo3.png);
@@ -43,14 +39,12 @@ header{
     top: 15px;
     overflow: hidden;
 }
-
 #barra_busqueda{
     position: relative;
     width: 30%;
     height: 40px;
     border-radius: 30px;
 }
-
 #busqueda_input{
     font-size: larger;
     font-family: 'Courier New', Courier, monospace ;
@@ -60,7 +54,6 @@ header{
     padding-left: 15px;
     background-color: #f5f4f3;
 }
-
 .icoLupaBuscar{
     position: absolute;
     background: url(/Assets/lupa_ico.png) no-repeat 50% #c29861;
@@ -72,7 +65,6 @@ header{
     top: 5.25px;
     background-size: 50px 30px;
 }
-
 .crear_iniciar{
     font-size: larger;
     font-family: 'Courier New', Courier, monospace;
@@ -81,7 +73,6 @@ header{
     width: 93px;
     text-align-last: center;
 }
-
 #mensaje_iniciar{
     width: 85px;
 }
@@ -91,14 +82,13 @@ header{
     height: 45%;
     top:3%
 }
-
 #carrito_img{
     position: absolute;
-    width: 40px;
-    height: 40px;
-    top: -25%;
+    width: 100;
+    height: 65px;
+    top: -55%;
+    left: -95%;
 }
-
 #mensajeCarrito{
     position: absolute;
     font-family: 'Courier New', Courier, monospace;
@@ -109,7 +99,6 @@ header{
     top: 27px;
     font-size: 1em;
 }
-
 #ico_cantidad_productos_carro{
     position: absolute;
     background-color: #e5c499;
@@ -119,7 +108,6 @@ header{
     left: 105%;
 
 }
-
 #contenido_bola{
     position: absolute;
     left: 19%;
@@ -127,7 +115,6 @@ header{
     font-family: 'Courier New', Courier, monospace;
 }
 /************************************NAV**************************************************/
-
 #nav{
     position: relative;
     display: flex;
@@ -144,28 +131,24 @@ header{
     top: 4px;
     left: 7.5%;
 }
-
 .barras{
     height: 36px;
     background-color: #BC8741;
     border-radius: 30px;
     margin-top: 11px;
 }
-
 #barra_categorias{
     position: absolute;
     left: 12%;
     top: 2%;
     width: 175px;
 }
-
 #barra_ofertas{
     position: absolute;
     width: 137px;
     left: 30%;
     top: 2%;
 }
-
 .texto_barras_nav{
     position: absolute;
     width:100% ;
@@ -177,7 +160,6 @@ header{
     font-family: 'Courier New', Courier, monospace;
     color: #79572c;
 }
-
 .flecha_menu_desplegable{
     position: absolute;
     width: 0%;
@@ -189,11 +171,9 @@ header{
     top: 28%;
     color: #79572c;
 }
-
 #flecha_ofertas{
     left: 78%;
 }
-
 #linea_separadora2{
     position: absolute;
     width: 70%;
@@ -202,8 +182,6 @@ header{
     top: 52px;
     left: 15%;
 }
-
-
 /************************************CONTAINER********************************************/
 #container{
     position: relative;
@@ -237,10 +215,7 @@ header{
     text-shadow: black 0.1em 0.1em 0.2em;
     font-weight: 700;
     text-align: center;
-    
-
 }
-
 #titulo_ofertas{
     display: flex;
     justify-content: center;
@@ -248,8 +223,8 @@ header{
     position: relative;
     width: 100%;
     height: 40px;
+    margin-bottom: 1%;
 }
-
 #titulo_ofertas h3{
     position: absolute;
     font-style: italic;
@@ -258,15 +233,41 @@ header{
     font-size: 200%;
     text-align: center;
 }
-
 #ofertas{
-    position: relative;
-    display: grid;
-    height: 30%;
-    width: 90%;
     background-color: #c29861;
-}   
+    height: 44%;
+    width: 90%;
+    left: 5%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.contenedor_ofertas{
+    display: flex;
+    position: relative;
+    height: 280px;
+    width: 25%;
 
+}
+.imagen_producto{
+    position: absolute;
+    background: url(/Assets/lupa_ico.png) no-repeat 50% #c29861;
+    width: 270px;
+    height: 190px;
+    border: 1px transparent #c29861;
+    border-radius: 10px;
+    left: 83%;
+    top: 5.25px;
+    background-size: 50px 30px;
+}
+.nombre_producto{
+    height: 50%;
+    width: 100%;
+}
+.precio_producto{
+    height: 50%;
+    width: 100%;
+}
 .productos{
     position: absolute;
     top:10%;
@@ -276,12 +277,10 @@ header{
     display: none;
 }
 /********************************DETALLES DE PRODUCTO*****************/
-
 .container{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: aliceblue;
 }
 .container_producto_principal{
     position: relative;
@@ -445,37 +444,424 @@ header{
     margin: 5%;
     background: #004d29;
 }
+/************************************HEADER TEMPLATE INFOCUENTA********/
+#info_cuenta{
+    width: 7%;
+    height: 80%;
+}
+
+#info_cuenta a{
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-image: url(/Assets/ico_persona.svg);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: center;
+}
+/********************************************LISTA DE COMPRAS*********/
+.container{
+    display: flex;
+}
+#container_listas{
+    position: relative;
+    display: grid;
+    width: 60%;
+    height: 80%;
+    margin: 1% 2.5% 0 5%;
+    padding: 1% 4%;
+    background-color: #DDBE96;
+    border-radius: 25px;
+    grid-template-rows: 10% 1fr*5;
+}
+#lista_titulo{
+    display: flex;
+    align-items: center;
+}
+.producto_de_lista{
+    display: grid;
+    position: relative;
+    grid-template-columns: 20% 74% 6%;
+    grid-template-rows: 1fr 1fr;
+}
+.producto_de_lista::before{
+    background-color: #BC8741;
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: -7%;
+    position: absolute;
+    top: 50.2%;
+    width: 110%;
+    left: -5%;
+}
+.producto_de_lista::after{
+    background-color: #BC8741;
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: 5.9%;
+    position: absolute;
+    top: 50%;
+    width: 110%;
+    left: -5%;
+}
+.producto_de_lista .imagen_producto_lista{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: #004D29;
+    margin: 5%;
+}
+.nombre_producto_lista{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 2.5% 0 0 10%;
+}
+.bote_de_basura{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    background-color: transparent;
+    background-image: url(/Assets/ico_basura.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    border: transparent;
+    height: 50%;
+    width: 50%;
+    margin-top: 31%;
+    overflow: hidden;
+}
+.nombre_producto_lista ,.precio_producto,.combo_cantidad {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+.precio_producto{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 10%;
+}
+.combo_cantidad{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    position: absolute;
+    right: 0;
+    width: 30%;
+    justify-content: flex-end;
+}
+.precio_producto{
+    font-weight: 700;
+}
+.combo_cantidad p{
+    margin: 0 10%;
+}
+#container_resumen_lista{
+    background-color: #DDBE96;
+    width: 24%;
+    height: 25%;
+    top: 0;
+    right: 0;
+    margin: 1% 10% 0 0;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 25% 20% 20% 15% 20%;
+}
+.titulo_resumen{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+.total_parcial{
+    position: absolute;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    left: 20%;
+    font-weight: 300;
+}
+.valor_total_parcial{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 700;
+}
+.ahorrado{
+    position: absolute;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    left: 20%;
+    font-weight: 300;
+}
+.separador{
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    background-color: #BC8741;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: -20%;
+    width: 90%;
+    left: 5%;
+}
+.valor_ahorrado{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-weight: 700;
+}
+.total_estimado{
+    position: absolute;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    left: 20%;
+    font-weight: 300;
+}
+.valor_total_estimado{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    font-weight: 700;
+}
+#boton_hacer_pedido{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    background-color: #BC8741;
+    position: absolute;
+    color: #e2e2e2;
+    margin-bottom: 3%;
+    width: 80%;
+    left: 10%;
+    border: transparent;
+    border-radius: 15px;
+    height: 75%;
+    font-weight: 700;
+}
+/*************************************************INICIAR SESION*******/
+#container_sesion_crear{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.bloque_sesion_crear{
+    position: relative;
+    background-color: #caa36f;
+    height: 80%;
+    width: 30%;
+    border-radius: 30px;
+    padding: 5%;
+}
+#titulo_sesion{
+    position: absolute;
+    height: 10%;
+    width: 80%;
+    top: 7%;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+.linea_sesion_crear{
+    position: absolute;
+    height: 1%;
+    width: 80%;
+    top: 20%;
+    left: 10%;
+    background-color: #BC8741;
+}
+.titulos_iniciar_crear{
+    position: absolute;
+    height: 5%;
+    width: 80%;
+    left: 10%;
+    font-size: 150%;
+    padding-bottom: 20%;
+    font-weight: bolder; 
+    font-family: 'Courier New', Courier, monospace;
+    color: #79572c;
+    padding-bottom: 5%;
+}
+.barras_iniciar_crear{
+    position: absolute;
+    background-color: whitesmoke;
+    height: 5%;
+    width: 80%;
+    left: 10%;
+    border: transparent;
+    border-radius: 30px;
+    padding-left: 5%;
+    margin-top: 2%;
+}
+#sesion_titulo_nombre{
+    top: 30%;
+}
+#sesion_barra_nombre{
+    top: 35%;
+}
+#sesion_titulo_contrasena{
+    top: 50%;
+}
+#sesion_barra_contraseña{
+    top: 55%;
+}
+.boton{
+    position: absolute;
+    background-color: #BC8741;
+    border-radius: 30px;
+    text-align: center;
+    color: aliceblue;
+    border: transparent;
+    font-weight: 700;
+}
+
+#boton_ingresar{
+    left: 40%;
+    top: 70%;
+    height: 6%;
+    width: 20%;
+    padding-top: 1%;
+}
+#no_tienes_cuenta{
+    position: absolute; 
+    left: 10%;
+    top: 85%;
+    height: 3%;
+    width: 50%;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+#linea_no_cuenta{
+    position: absolute; 
+    background-color: #BC8741;
+    left: 10%;
+    top: 87.5%;
+    height: 0.6%;
+    width: 49%;
+}
+/************************************************CREAR CUENTA***********/
+#titulo_crear{
+    position: absolute;
+    height: 10%;
+    width: 80%;
+    top: 7%;
+    left: 20%;
+    font-size: 300%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: #79572c;
+}
+#crear_titulo_nombre{
+    top: 23%;
+}
+#crear_barra_nombre{
+    top: 27%;
+}
+#crear_titulo_apellidos{
+    top: 36%;
+}
+#crear_barra_apellidos{
+    top: 40%;
+}
+#crear_titulo_correo{
+    top: 49%;
+}
+#crear_barra_correo{
+    top: 53%;
+}
+#crear_titulo_direccion{
+    top: 63%;
+}
+#crear_barra_direccion{
+    top: 67%;
+}
+#crear_titulo_contrasena{
+    top: 76%;
+}
+#crear_barra_contrasena{
+    top: 80%;
+}
+#boton_crear{
+    top: 90%;
+    left: 40%;
+    width: 15%;
+    height: 5%;
+    font-weight: bolder;
+}
 /**************************************************FOOTER************************************/
 footer{
-    background-color: #004d29;
-    width: 100%;
-    height: 35%;
+    background-color: #004D29;
     position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 50%;
 }
 .bloques_footer{
     position: absolute;
-    width: 20%;
-    height: 70%;
-    display: inline-block;
-    top:10%;
-    font-family: 'Courier New', Courier, monospace ;
+    width: auto;
+    height: 100%;
+    padding: 10%;
     color:#c29861;
     text-align: center;
-
 }
-
+.bloques_footer img{
+    width: 150px;
+    height: 100px;
+}
 .bloques_footer >p{
+    margin-top: 15px;
     color: rgb(158, 158, 158);
 }
-
-#targeta_footer{
-    left: 10%;
+#tarjeta_footer{
+    grid-column: 1/2;
 }
-
 #caja_footer{
-    left: 40%;
+    grid-column: 2/3;
 }
-
+#caja_footer::before{
+    background-color: #e2e2e2;
+    content: "";
+    display: block;
+    height: 65px;
+    margin-top: -32.5px;
+    position: absolute;
+    top: 50%;
+    width: 1px;
+    left: 0;
+}
+#caja_footer::before{
+    background-color: gray;
+    content: "";
+    display: block;
+    height: 65px;
+    margin-top: -32.5px;
+    position: absolute;
+    top: 50%;
+    width: 1px;
+    left: 0;
+}
+#caja_footer::after{
+    background-color: gray;
+    content: "";
+    display: block;
+    height: 65px;
+    margin-top: -32.5px;
+    position: absolute;
+    top: 50%;
+    width: 1px;
+    right: 0;
+}
+#caja_footer img{
+    width: 180px;
+}
 #escudo_footer{
-    left: 70%;
+    grid-column: 3/4;
+}
+#escudo_footer img{
+    width: 180px;;
 }
