@@ -360,7 +360,7 @@ body{
 
 #linea_separadora_productos_similares{
     position: absolute;
-    border: 2px solid  #BC8741;
+    border: 3px solid  #BC8741;
     width: 45%;
     left: 2.5%;
     top: 100%;
@@ -638,6 +638,43 @@ body{
     height: 75%;
     font-weight: 700;
 }
+/********************************************CONFIRMAR PEDIDO**********/
+.primer_bloque_confirmar_compras{
+    position: relative;
+    width: 70%;
+}
+.bloque_direccion{
+    position: relative;
+    display: grid;
+    margin: 1% 2.5% 1% 5%;
+    width: 60%;
+    height: 35%;
+    padding: 1% 4%;
+    background-color: #DDBE96;
+}
+.metodo_de_pago{
+    position: absolute;
+    display: grid;
+    margin: 1% 2.5% 1% 5%;
+    width: 60%;
+    height: 35%;
+    top: 40%;
+    padding: 1% 4%;
+    background-color: #DDBE96;
+}
+.resumen_confirmacion{
+    display: grid;
+    position: relative;
+    background-color: #DDBE96;
+    width: 24%;
+    height: 25%;
+    margin: 1% 10% 0 0;
+    border-radius: 25px;
+    overflow: hidden;
+
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 25% 20% 20% 15% 20%;
+}
 /*************************************************INICIAR SESION*******/
 #container_sesion_crear{
     display: flex;
@@ -647,64 +684,75 @@ body{
     align-items: center;
 }
 .bloque_sesion_crear{
-    position: relative;
     background-color: #caa36f;
+    position: relative; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 5% 10% 5% 10% 10% 30%;
     height: 80%;
     width: 30%;
     border-radius: 30px;
-    padding: 5%;
+    padding: 3%;
 }
 #titulo_sesion{
+    grid-column: 1/2;
+    grid-row: 1/2;
     position: absolute;
     height: 10%;
-    width: 80%;
-    top: 7%;
-    font-size: 2rem;
+    width: 100%;
+    font-size: 3rem;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 400;
+    font-weight: 700;
 }
 .linea_sesion_crear{
     position: absolute;
-    height: 1%;
-    width: 80%;
-    top: 20%;
-    left: 10%;
+    height: 2.5%;
+    width: 100%;
+    top: 80%;
     background-color: #BC8741;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 .titulos_iniciar_crear{
     position: absolute;
-    height: 5%;
     width: 80%;
-    left: 10%;
-    font-size: 150%;
-    padding-bottom: 20%;
+    font-size: 2rem;
     font-weight: bolder; 
     font-family: 'Courier New', Courier, monospace;
-    color: #79572c;
+    color: black;
+    font-weight: 100;
     padding-bottom: 5%;
+}
+#sesion_titulo_nombre{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#sesion_titulo_contrasena{
+    grid-column: 1/2;
+    grid-row: 4/5;
 }
 .barras_iniciar_crear{
     position: absolute;
     background-color: whitesmoke;
-    height: 5%;
-    width: 80%;
-    left: 10%;
-    border: transparent;
+    height: 60%;
+    width: 100%;
+    left: -2.5%;
+    border: 4px solid #BC8741;
     border-radius: 30px;
     padding-left: 5%;
     margin-top: 2%;
 }
-#sesion_titulo_nombre{
-    top: 30%;
-}
 #sesion_barra_nombre{
-    top: 35%;
+    grid-column: 1/2;
+    grid-row: 3/4;
 }
-#sesion_titulo_contrasena{
-    top: 50%;
+#sesion_barra_contrasena{
+    grid-column: 1/2;
+    grid-row: 5/6;
 }
-#sesion_barra_contraseña{
-    top: 55%;
+#boton_ingresar, #no_tienes_cuenta, #linea_no_cuenta, #crea_una{
+    grid-column: 1/2;
+    grid-row: 7/8;
 }
 .boton{
     position: absolute;
@@ -715,18 +763,16 @@ body{
     border: transparent;
     font-weight: 700;
 }
-
 #boton_ingresar{
+    top: 0;
     left: 40%;
-    top: 70%;
-    height: 6%;
+    height: 20%;
     width: 20%;
-    padding-top: 1%;
+    padding: 1%;
 }
 #no_tienes_cuenta{
     position: absolute; 
-    left: 10%;
-    top: 85%;
+    top: 70%;
     height: 3%;
     width: 50%;
     color: black;
@@ -734,12 +780,20 @@ body{
     font-weight: bolder;
 }
 #linea_no_cuenta{
-    position: absolute; 
+    position: absolute;
     background-color: #BC8741;
-    left: 10%;
-    top: 87.5%;
-    height: 0.6%;
-    width: 49%;
+    top: 80%;
+    height: 1%;
+    width: 40%;
+}
+#crea_una{
+    position: absolute; 
+    top: 82%;
+    height: 3%;
+    width: 50%;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
 }
 /************************************************CREAR CUENTA***********/
 #titulo_crear{

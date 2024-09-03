@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Super Compras</title>
+        <title>Confirmar pedido</title>
         <link rel="stylesheet" href="/Vista/estilos.css">
         <!-------------------------------------Fuentes------------------------------>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,28 +37,54 @@
                 </div>
             </div>
         </header>
+
         <section class="container">
-            <section class="bloque_direccion">
-                <input type="radio" class="seleccion_envio-retiro">
-                <h4 id="mensaje_entrega_domicilio">Entrega a domicilio </h4>
-                <h4 id="mensaje_direccion">Dirección de entrega: </h4>
-                <p id="">Casita</p>
-                <p>Modificar</p>
-                <p>Agregar</p>
+            <div class="primer_bloque_confirmar_compras">
+                <section class="container_listas">
+                    <input type="radio" class="seleccion_envio-retiro">
+                    <h4 id="mensaje_entrega_domicilio">Entrega a domicilio </h4>
+                    <h4 id="mensaje_direccion">Dirección de entrega: </h4>
+                    <p id="">Casita</p>
+                    <p>Modificar</p>
+                    <p>Agregar</p>
+    
+                    <input type="radio" class="seleccion_envio-retiro">
+                    <h4>Entrega en sucursal: </h4>
+                    <p>En </p>
+                    <button></button>
+                    <h4>Super Compras Plaza imperial</h4>
+                    <img src="" alt="">
+                    <p>Retira hoy-Gratis</p>
+                </section>
+    
+                <section class="metodo_de_pago">
+                    <h1 id="titulo_metodo_de_pago">Métodos de pago</h1>
+                    
+                    <input type="radio">
+                    <img class="ico_mapa" src="" alt="">
+                    <h2 id="pago_contra_entrega" class="texto_items_de_pago">Pago contra entrega</h2>
+    
+                    <input type="radio">
+                    <img class="tajeta_metodo_de_pago" src="" alt="">
+                    <h2 id="" class="texto_items_de_pago">5370 68****************4489</h2>
+                    
+                    <input type="radio">
+                    <img class="tajeta_metodo_de_pago" src="" alt="">
+                    <h2 id="" class="texto_items_de_pago">Añade una nueva tarjeta</h2>
+                </section>
+                
+            </div>
+            
+            <aside class="resumen_confirmacion">
+                <h1>Resumen</h1>
+                <h3 id="titulo_subtotal">Subtotal: </h2>
+                <p id="valor_subtotal">$40.610</p>
 
-                <input type="radio" class="seleccion_envio-retiro">
-                <h4>Entrega en sucursal: </h4>
-                <p>En </p>
-                <button></button>
-                <h4>Super Compras Plaza imperial</h4>
-                <img src="" alt="">
-                <p>Retira hoy-Gratis</p>
-            </section>
-            <section>
-
-            </section>
-            <aside>
-
+                <h3 id="titulo_total_envio">Total de envio: </h2>
+                <p id="valor_total_envio">$5.900</p>
+                
+                <h2 id="titulo_total_confirmacion">Total: </h2>
+                <p id="valor_total_confirmacion">$46.610</p>
             </aside>
         </section>
     </body>
