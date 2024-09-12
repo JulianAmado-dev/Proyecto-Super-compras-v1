@@ -272,7 +272,11 @@ header{
 }
 #linea_separadora_productos_similares{
     position: absolute;
-    
+    width: 70%;
+    height: 2px;
+    border: 2.5px solid #BC8741;
+    top: 29px;
+    left: 15%;
 }
 #bloque_comprar_anadir_a_cesta{
     position: absolute;
