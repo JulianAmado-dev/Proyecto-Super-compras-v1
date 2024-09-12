@@ -5,77 +5,76 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Informacion de la Cuenta</title>
             <link rel="stylesheet" href="/Vista/estilos.css">
-            <link rel="stylesheet" href="/Vista/estilosSesion.css">
-            <link rel="stylesheet" href="/Vista/estilosInfo.css">
         </head>
         <body>  
-
-            <header>
-                <img src="logo.png" id="logo">
-                <div id="barra_busqueda">
-                    <input type="text" id="busqueda">
-                    <div id="contenido_barra_busqueda">Buscar</div>
-                </div>
-                <div id="crear_cuenta">
-                    <div id="contenido_crear_cuenta">Crea tu cuenta</div>
-                </div>
-            
-                <div id="iniciar_sesion">
-                    <div id="contenido_iniciar_sesion">Iniciar sesión</div>
-                </div>
-                <div id="carrito">
-                    <img src="carrito.png" id="carrito_img">
-                        <div id="ico_cantidad_productos_carro">
-                            <div id="contenido_bola">0</div>
-                        </div>
+            <header id="header">
+                <div id="logo_div">
+                    <a href="/Modelo/index.html" id="logo"></a>
                 </div>
             </header>
 
-            <section id="container">
+            <section id="container_info">
                 <div class="gran_bloque" id="bloque_info">
                     
-                    <div id="titulo_info">Informacion de la cuenta</div>
-                    <div class="linea_sesion_crear"></div>
+                    <h2 id="info_cuenta_title">Información de la cuenta</h2>
+                    <div class="linea_info"></div>
+                    <div id="doble_bloque_info">
+                        <div id="bloque_info_izq">
 
-                    <div class="titulos_iniciar_crear" id="info_titulo_nombre">Nombre</div>
-                    <div class="barras_iniciar_crear" id="info_barra_nombre"></div>
-                    
-                    <div class="titulos_iniciar_crear" id="info_titulo_apellidos">Apellidos</div>
-                    <div class="barras_iniciar_crear" id="info_barra_apellidos"></div>
-                    
-                    <div class="titulos_iniciar_crear" id="info_titulo_correo">Correo Electronico</div>
-                    <div class="barras_iniciar_crear" id="info_barra_correo"></div>
-                    
-                    <div class="titulos_iniciar_crear" id="info_titulo_direccion">Dirección</div>
-                    <div class="barras_iniciar_crear" id="info_barra_direccion"></div>
-                    
-                    <div class="titulos_iniciar_crear" id="info_titulo_contrasena">Contraseña</div>
-                    <div class="barras_iniciar_crear" id="info_barra_contrasena"></div>
+                            <h2 class="titulos_info" id="info_titulo_nombres">Nombres</h2>
+                            <div class="espacio_info_contenido" id="espacio_info1">
+                                <h2 class="titulos_info_contenido" id="info_contenido_nombres">Juan Andrés Tellez</h2>
+                                <button class="boton_agregar_cambiar">Cambiar nombres ></button>
+                            </div>
+    
+                            <h2 class="titulos_info" id="info_titulo_correo_electronico">Correo electrónico</h2>
+                            <div class="espacio_info_contenido" id="espacio_info2">
+                                <h2 class="titulos_info_contenido" id="info_contenido_correo_electronico">jutellez@gmail.com</h2>
+                                <button class="boton_agregar_cambiar">Cambiar correo ></button>
+                            </div>
+    
+                            <h2 class="titulos_info" id="info_titulo_direccion">Dirección de residencia</h2>
+                            <div class="espacio_info_contenido" id="espacio_info3">
+                                <h2 class="titulos_info_contenido" id="info_contenido_direccion">Kra 78 No. 41 a 14</h2>
+                                <button class="boton_agregar_cambiar">Cambiar dirección ></button>
+                            </div>
+    
+                            <h2 class="titulos_info" id="info_titulo_contraseña">Contraseña</h2>
+                            <div class="espacio_info_contenido" id="espacio_info4">
+                                <h2 class="titulos_info_contenido" id="info_contenido_contraseña">JTZ1998</h2>
+                                <button class="boton_agregar_cambiar">Cambiar contraseña ></button>
+                            </div>
+                        </div>
+    
+                        <div id="bloque_info_rght">
+                            <h2 class="pregunta_codigo">¿Eres empleado de Super compras?<br>¡Ingresa tu código de empleado!</h2>
+                            <input id="codigo_empleado" type="text" placeholder="XXXX-XXXX-XXXX">
+                        </div>
+                    </div>
 
-                    <div class="titulos_iniciar_crear" id="info_titulo_codigo">Codigo de empleado</div>
-                    <div class="barras_iniciar_crear" id="info_barra_codigo"></div>
-
-
-                    <div class="boton" id="boton_guardar">Guardar Cambios</div>
 
                 </div>
             </section>
 
+<!---------------------------------------FOOTER-------------------->
             <footer>
-                <div class= "bloques_footer" id="targeta_footer">
-                    <h1>Paga con targeta o en efectivo</h1>
-                    <p>Con Mercado Pago, paga en cuotas y aprovecha la comodidad de financiación que te da tu banco, o hazlo con efectivo en puntos de pago. ¡Y siempre es seguro!</p>                    
+                <div class="bloques_footer" id="tarjeta_footer">
+                    <img src="/Assets/ico_tarjeta_footer.png" alt="Paga con tarjeta de credito o en efectivo">
+                    <h2>Paga con tarjeta o en efectivo</h2>
+                    <p>Con Super Compras Pago, paga en cuotas y aprovecha la comodidad de financiación que te da tu banco, o hazlo con
+                        efectivo en puntos de pago. ¡Y siempre es seguro!</p>
                 </div>
-
-                <div class= "bloques_footer" id="caja_footer">
-                    <h1>Envío gratis desde $ 100.000</h1>
+                <div class="bloques_footer" id="caja_footer">
+                    <img src="/Assets/ico_cajas_footer.png" alt="envios gratis desde $100.000">
+                    <h2>Envío gratis desde $100.000</h2>
                     <p>Con solo estar registrado en Supercompras, tienes envíos gratis en miles de productos seleccionados.</p>
                 </div>
-                <div class= "bloques_footer" id="escudo_footer">
-                    <h1>Seguridad, de principio a fin</h1>
-                    <p>¿No te gusta? ¡Devuélvelo! En Supercompras, no hay nada que no puedas hacer, porque estás siempre protegido.</p>
+                <div class="bloques_footer" id="escudo_footer">
+                    <img src="/Assets/ico_escudo_footer.png" alt="Seguridad de principio a fin">
+                    <h2>Seguridad, de principio a fin</h2>
+                    <p>¿No te gusta? ¡Devuélvelo! En Supercompras, no hay nada que no puedas hacer, porque estás siempre
+                        protegido.</p>
                 </div>
- 
             </footer>
         </body>
     </html>
