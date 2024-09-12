@@ -5,45 +5,108 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Gerencia</title>
             <link rel="stylesheet" href="/Vista/estilos.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
         </head>
         <body>  
-            <header id="header">
+            <header id="header_trabajadores">
                 <div id="logo_div">
                     <a href="" id="logo"></a>
+                    
+                </div>
+                <div id="bloque_header_gerencia">
+                    <a href="" ></a>
+                        <h2>Gerencia</h2>
+                        <img src="/Assets/ico_trabajadores.svg" alt="">
+                    </a>
                 </div>
             </header>
-            
-            <section class="report-container">
-                <h2>Informes Gerenciales</h2>
-                <div class="report">
-                    <label for="cantidad-ordenes">Cantidad de órdenes</label>
-                    <select id="cantidad-ordenes" name="Mes">
-                        <option disabled>Mes</option>
-                        <option value="enero">Enero</option>
-                        <option value="febrero">Febrero</option>
-                        <option value="marzo">Marzo</option>
-                        <option value="abril">Abril</option>
-                        <option value="mayo">Mayo</option>
-                        <option value="junio">Junio</option>
-                        <option value="julio">Julio</option>
-                        <option value="agosto">Agosto</option>
-                        <option value="septiembre">Septiembre</option>
-                        <option value="octubre">Octubre</option>
-                        <option value="noviembre">Noviembre</option>
-                        <option value="diciembre">Diciembre</option>
-                    </select>
-                    <select>
-                        <option value="semana">Semana</option>
-                        <option value="semana1">Semana 1</option>
-                        <option value="semana2">Semana 2</option>
-                        <option value="semana3">Semana 3</option>
-                        <option value="semana4">Semana 4</option>
-                    </select> 
-    
+            <section class="container_reportes_gerenciales">
+                <div class="container_titulo_reportes">
+                    <h2 id="gran_titulo_informe">Informes Gerenciales</h2>
+                    <div class="container_reportes">
+                        <div class="report">
+                            <label for="cantidad-ordenes">Cantidad de órdenes</label>
+                            <select id="cantidad-ordenes" name="Mes">
+                                <option disabled>Mes</option>
+                                <option value="enero">Enero</option>
+                                <option value="febrero">Febrero</option>
+                                <option value="marzo">Marzo</option>
+                                <option value="abril">Abril</option>
+                                <option value="mayo">Mayo</option>
+                                <option value="junio">Junio</option>
+                                <option value="julio">Julio</option>
+                                <option value="agosto">Agosto</option>
+                                <option value="septiembre">Septiembre</option>
+                                <option value="octubre">Octubre</option>
+                                <option value="noviembre">Noviembre</option>
+                                <option value="diciembre">Diciembre</option>
+                            </select>
+
+                            <select>
+                                <option value="semana">Semana</option>
+                                <option value="semana1">Semana 1</option>
+                                <option value="semana2">Semana 2</option>
+                                <option value="semana3">Semana 3</option>
+                                <option value="semana4">Semana 4</option>
+                            </select> 
+                        </div>
+
+                        <div class="report">
+                            <label for="ordenes-completadas">Órdenes completadas</label>
+                            <select id="ordenes-completadas" name="Mes">
+                                <option disabled>Mes</option>
+                                <option value="enero">Enero</option>
+                                <option value="febrero">Febrero</option>
+                                <option value="marzo">Marzo</option>
+                                <option value="abril">Abril</option>
+                                <option value="mayo">Mayo</option>
+                                <option value="junio">Junio</option>
+                                <option value="julio">Julio</option>
+                                <option value="agosto">Agosto</option>
+                                <option value="septiembre">Septiembre</option>
+                                <option value="octubre">Octubre</option>
+                                <option value="noviembre">Noviembre</option>
+                                <option value="diciembre">Diciembre</option>
+                            </select>
+                            <select>
+                                <option value="semana">Semana</option>
+                                <option value="semana1">Semana 1</option>
+                                <option value="semana2">Semana 2</option>
+                                <option value="semana3">Semana 3</option>
+                                <option value="semana4">Semana 4</option>
+                            </select> 
+                        </div>
+
+                        <div class="report">
+                            <label for="ordenes-no-completadas" id="label_no_completadas">Órdenes no completadas</label>
+                            <select id="ordenes-no-completadas" name="Mes">
+                                <option disabled>Mes</option>
+                                <option value="enero">Enero</option>
+                                <option value="febrero">Febrero</option>
+                                <option value="marzo">Marzo</option>
+                                <option value="abril">Abril</option>
+                                <option value="mayo">Mayo</option>
+                                <option value="junio">Junio</option>
+                                <option value="julio">Julio</option>
+                                <option value="agosto">Agosto</option>
+                                <option value="septiembre">Septiembre</option>
+                                <option value="octubre">Octubre</option>
+                                <option value="noviembre">Noviembre</option>
+                                <option value="diciembre">Diciembre</option>
+                            </select>   
+                            <select>
+                                <option value="semana">Semana</option>
+                                <option value="semana1">Semana 1</option>
+                                <option value="semana2">Semana 2</option>
+                                <option value="semana3">Semana 3</option>
+                                <option value="semana4">Semana 4</option>
+                            </select> 
+                        </div>
+
+                    </div> 
                 </div>
-                <div class="report">
-                    <label for="ordenes-completadas">Órdenes completadas</label>
-                    </div>
             </section>
 
             <footer>
