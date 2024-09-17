@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Super Compras</title>
-        <link rel="stylesheet" href="/Vista/estilos.css">
+        <link rel="stylesheet" href="../Vista/estilos.css">
         <!-------------------------------------Fuentes------------------------------>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,27 +21,27 @@
         <!-------------------------------------HEADER------------------------------------------------------->
         <header id="header">
             <div id="logo_div">
-                <a href="" id="logo"></a>
+                <a href="/Modelo/index.html" id="logo"></a>
             </div>
             <div id="barra_busqueda">
                 <input type="text" placeholder="Buscar..." id="busqueda_input">
                 <input class="icoLupaBuscar" type="button">
             </div>
             <div>
-                <h3 class="crear_iniciar">Crear tu cuenta</h3>
+                <a href="../Modelo/crearCuenta.html" class="crear_iniciar">Crea <br>tu cuenta</a>
             </div>
 
             <div>
-                <h3 class="crear_iniciar" id="mensaje_iniciar">Iniciar sesión</h3>
+                <a href="/Modelo/iniciarSesion.html" class="crear_iniciar" id="mensaje_iniciar">Iniciar <br>sesión</a>
             </div>
 
             <div id="carrito">
-                <img src="/Assets/carrito.svg" id="carrito_img">
+                <img src="../Assets/carrito.svg" id="carrito_img">
                 <div id="ico_cantidad_productos_carro">
                     <div id="contenido_bola">0</div>
                 </div>
                 <div id="mensajeCarrito">
-                    <h3>Carrito</h3>
+                    <a href="/Modelo/listaDeCompras.html">Carrito</a>
                 </div>
             </div>
         </header>
@@ -61,7 +61,7 @@
         <!-------------------------------------CONTAINER------------------------------------------------------->
         <section id="container">
             <div id="banner">
-                <img id="fondo_banner" src="/Assets/About.png">
+                <img id="fondo_banner" src="../Assets/About.png">
                 <h1 id="contenido_banner">Ingresa al mundo del mercar <br>rápido
             </div>
             </div>
@@ -70,11 +70,11 @@
             </div>
             <div id="ofertas">
                 <div class="contenedor_ofertas" id="contenedor1">
-                    <a class="imagen_producto" id="imagen_producto_espacio1" href=""></a>
+                    <a class="imagen_producto" id="imagen_producto_espacio1" href="/Modelo/detallesProductos.html"></a>
                     <h4 class="nombre_producto" id="nombre_producto_espacio1">Cubeta de huevos 6u</h4>
                     <h4 class="precio_producto_index" id="precio_producto_espacio1">$12.320</h4>
                     <button class="agregar_al_carrito" id="agg_al_carrito_producto_espacio1">
-                        <img class="imagen_agregar_al_carrito" src="/Assets/ico_agregar_al_carrito.svg" alt="">
+                        <img class="imagen_agregar_al_carrito" src="../Assets/ico_agregar_al_carrito.svg" alt="">
                         <h4>+</h4>
                     </button>
                 </div>
@@ -84,7 +84,7 @@
                     <h4 class="nombre_producto">jabon para cuerpo de limón</h4>
                     <h4 class="precio_producto_index">$ 6.500</h4>
                     <button class="agregar_al_carrito">
-                        <img class="imagen_agregar_al_carrito" src="/Assets/ico_agregar_al_carrito.svg" alt="">
+                        <img class="imagen_agregar_al_carrito" src="../Assets/ico_agregar_al_carrito.svg" alt="">
                         <h4>+</h4>
                     </button>
                 </div>
@@ -94,7 +94,7 @@
                     <h4 class="nombre_producto">caja de leche 600ml</h4>
                     <h4 class="precio_producto_index">$ 7.500</h4>
                     <button class="agregar_al_carrito">
-                        <img class="imagen_agregar_al_carrito" src="/Assets/ico_agregar_al_carrito.svg" alt="">
+                        <img class="imagen_agregar_al_carrito" src="../Assets/ico_agregar_al_carrito.svg" alt="">
                         <h4>+</h4>
                     </button>
                 </div>
@@ -104,30 +104,30 @@
                     <h4 class="nombre_producto">filete de salmón 300gr</h4>
                     <h4 class="precio_producto_index">$ 8.900</h4>
                     <button class="agregar_al_carrito">
-                        <img class="imagen_agregar_al_carrito" src="/Assets/ico_agregar_al_carrito.svg" alt="">
+                        <img class="imagen_agregar_al_carrito" src="../Assets/ico_agregar_al_carrito.svg" alt="">
                         <h4>+</h4>
                     </button>
                 </div>
                 <button id="slider_ofertas">
-                    <img src="/Assets/ico_slider.svg" alt="">
+                    <img src="../Assets/ico_slider.svg" alt="">
                 </button>
             </div>
         </section>
 <!---------------------------------------FOOTER-------------------->
         <footer>
             <div class="bloques_footer" id="tarjeta_footer">
-                <img src="/Assets/ico_tarjeta_footer.png" alt="Paga con tarjeta de credito o en efectivo">
+                <img src="../Assets/ico_tarjeta_footer.png" alt="Paga con tarjeta de credito o en efectivo">
                 <h2>Paga con tarjeta o en efectivo</h2>
                 <p>Con Super Compras Pago, paga en cuotas y aprovecha la comodidad de financiación que te da tu banco, o hazlo con
                     efectivo en puntos de pago. ¡Y siempre es seguro!</p>
             </div>
             <div class="bloques_footer" id="caja_footer">
-                <img src="/Assets/ico_cajas_footer.png" alt="envios gratis desde $100.000">
+                <img src="../Assets/ico_cajas_footer.png" alt="envios gratis desde $100.000">
                 <h2>Envío gratis desde $100.000</h2>
                 <p>Con solo estar registrado en Supercompras, tienes envíos gratis en miles de productos seleccionados.</p>
             </div>
             <div class="bloques_footer" id="escudo_footer">
-                <img src="/Assets/ico_escudo_footer.png" alt="Seguridad de principio a fin">
+                <img src="../Assets/ico_escudo_footer.png" alt="Seguridad de principio a fin">
                 <h2>Seguridad, de principio a fin</h2>
                 <p>¿No te gusta? ¡Devuélvelo! En Supercompras, no hay nada que no puedas hacer, porque estás siempre
                     protegido.</p>

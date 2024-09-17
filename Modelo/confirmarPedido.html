@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Confirmar pedido</title>
-        <link rel="stylesheet" href="/Vista/estilos.css">
+        <link rel="stylesheet" href="../Vista/estilos.css">
         <!-------------------------------------Fuentes------------------------------>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +16,10 @@
             rel="stylesheet">
     </head>
     <body>
+<!-----------------------------HEADER-->
         <header id="header">
             <div id="logo_div">
-                <a href="" id="logo"></a>
+                <a href="../Modelo/index.html" id="logo"></a>
             </div>
             <div id="barra_busqueda">
                 <input type="text" placeholder="Buscar..." id="busqueda_input">
@@ -28,7 +29,7 @@
                 <a href=""></a>
             </div>
             <div id="carrito">
-                <img src="/Assets/carrito.svg" id="carrito_img">
+                <img src="../Assets/carrito.svg" id="carrito_img">
                 <div id="ico_cantidad_productos_carro">
                     <div id="contenido_bola">5</div>
                 </div>
@@ -37,26 +38,31 @@
                 </div>
             </div>
         </header>
-
+<!----------------------------------------CONFIRMAR PEDIDO------->
         <section class="container">
+
             <div class="primer_bloque_confirmar_compras">
-                <section class="container_listas">
-                    <input type="radio" class="seleccion_envio-retiro">
-                    <h4 id="mensaje_entrega_domicilio">Entrega a domicilio </h4>
-                    <h4 id="mensaje_direccion">Dirección de entrega: </h4>
-                    <p id="">Casita</p>
-                    <p>Modificar</p>
-                    <p>Agregar</p>
-    
-                    <input type="radio" class="seleccion_envio-retiro">
-                    <h4>Entrega en sucursal: </h4>
-                    <p>En </p>
-                    <button></button>
-                    <h4>Super Compras Plaza imperial</h4>
-                    <img src="" alt="">
-                    <p>Retira hoy-Gratis</p>
+                <section class="container_domicilio-sucursal">
+                    <div id="domicilio" class="domicilio-sucursal">
+                        <input type="radio" class="seleccion_envio-retiro">
+                        <h4 id="mensaje_entrega_domicilio">Entrega a domicilio: </h4>
+                        <h4 id="mensaje_direccion">Dirección de entrega: </h4>
+                        <p id="">Casita</p>
+                        <p>Modificar</p>
+                        <p>Agregar</p>
+                        
+                    </div>
+                    <div id="sucursal" class="domicilio-sucursal">
+                        <input type="radio" class="seleccion_envio-retiro">
+                        <h4>Entrega en sucursal: </h4>
+                        <p>En</p>
+                        <button id="boton_mapa"></button>
+                        <h4>Super Compras Plaza imperial</h4>
+                        <img src="" alt="">
+                        <p>Retira hoy-Gratis</p>
+                    </div>
                 </section>
-    
+<!-------------------------METODO DE PAGO-------------------->
                 <section class="metodo_de_pago">
                     <h1 id="titulo_metodo_de_pago">Métodos de pago</h1>
                     
@@ -74,7 +80,7 @@
                 </section>
                 
             </div>
-            
+<!--------------------RESUMEN---------------->
             <aside class="resumen_confirmacion">
                 <h1>Resumen</h1>
                 <h3 id="titulo_subtotal">Subtotal: </h2>
@@ -87,5 +93,25 @@
                 <p id="valor_total_confirmacion">$46.610</p>
             </aside>
         </section>
+<!---------------------------------------FOOTER-------------------->
+        <footer>
+            <div class="bloques_footer" id="tarjeta_footer">
+                <img src="../Assets/ico_tarjeta_footer.png" alt="Paga con tarjeta de credito o en efectivo">
+                <h2>Paga con tarjeta o en efectivo</h2>
+                <p>Con Super Compras Pago, paga en cuotas y aprovecha la comodidad de financiación que te da tu banco, o hazlo con
+                    efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </div>
+            <div class="bloques_footer" id="caja_footer">
+                <img src="../Assets/ico_cajas_footer.png" alt="envios gratis desde $100.000">
+                <h2>Envío gratis desde $100.000</h2>
+                <p>Con solo estar registrado en Supercompras, tienes envíos gratis en miles de productos seleccionados.</p>
+            </div>
+            <div class="bloques_footer" id="escudo_footer">
+                <img src="../Assets/ico_escudo_footer.png" alt="Seguridad de principio a fin">
+                <h2>Seguridad, de principio a fin</h2>
+                <p>¿No te gusta? ¡Devuélvelo! En Supercompras, no hay nada que no puedas hacer, porque estás siempre
+                    protegido.</p>
+            </div>
+        </footer>
     </body>
 </html>

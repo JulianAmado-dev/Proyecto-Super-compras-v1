@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital@0;1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital@0;1&display=swap');
 
 *{
     margin: 0;
@@ -8,14 +8,14 @@
 
 body{
     background-color: rgba(255, 255, 255);
-    background-image: url(/Assets/fondo_container_transparente.svg);
+    background-image: url(../Assets/fondo_container_transparente.svg);
     background-size: 100% auto;
     background-repeat:repeat;
     position: relative;
     height: 100vh;
     width: 100%;
 }
-/*********************************** HEADER ***************************************************/
+/***************************** HEADER  COMPLETO***************************************************/
 #header{
     background-color: #004d29;
     position: relative;
@@ -31,7 +31,7 @@ body{
 }
 #logo{
     position: absolute;
-    background-image: url(/Assets/logo3.png);
+    background-image: url(../Assets/logo3.png);
     background-size: 350px 150px;
     background-repeat: no-repeat;
     width: 276px;
@@ -56,7 +56,7 @@ body{
 }
 .icoLupaBuscar{
     position: absolute;
-    background: url(/Assets/lupa_ico.png) no-repeat 50% #c29861;
+    background: url(../Assets/lupa_ico.png) no-repeat 50% #c29861;
     width: 15%;
     height: 30px;
     border: 1px solid #c29861;
@@ -66,12 +66,13 @@ body{
     background-size: 50px 30px;
 }
 .crear_iniciar{
+    display: flex;
     font-size: larger;
     font-family: 'Courier New', Courier, monospace;
     color: aliceblue;
     font-weight: bolder;
-    width: 93px;
-    text-align-last: center;
+    text-align: center;
+    text-decoration: none;
 }
 #mensaje_iniciar{
     width: 85px;
@@ -91,13 +92,18 @@ body{
 }
 #mensajeCarrito{
     position: absolute;
-    font-family: 'Courier New', Courier, monospace;
-    color: aliceblue;
-    font-weight: bolder;
+
     width: 100%;
     height: 30px;
     top: 27px;
-    font-size: 1em;
+
+}
+#mensajeCarrito a{
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 1.1em;
+    text-decoration: none;
 }
 #ico_cantidad_productos_carro{
     position: absolute;
@@ -106,13 +112,69 @@ body{
     height: 50%;
     border-radius: 50%;
     left: 105%;
-
 }
 #contenido_bola{
     position: absolute;
     left: 19%;
     top: 15%;
     font-family: 'Courier New', Courier, monospace;
+}
+/**********************************HEADER TRABAJADORES*****************/
+#header_trabajadores{
+    background-color: #004d29;
+    position: relative;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+#logo_div{
+    width: 276px;
+    height: 70px;
+}
+#logo{
+    position: absolute;
+    background-image: url(../Assets/logo3.png);
+    background-size: 350px 150px;
+    background-repeat: no-repeat;
+    width: 276px;
+    height: 70px;
+    top: 15px;
+    overflow: hidden;
+}
+.bloque_rol_trabajador_header{
+    height:100%;
+    display:flex;
+    width: 20%;
+}
+.bloque_rol_trabajador_header a:nth-child(1n){
+    font-size: 2rem;
+    display: flex;
+    color: #f5f4f3;
+    align-items: center;
+}
+.bloque_rol_trabajador_header a:nth-child(2n){
+    width: 80%;
+    position: relative;
+    top: 20%;
+    background-image: url(../Assets/ico_trabajadores.svg);
+    background-repeat: no-repeat;
+    background-size: auto 60%;
+}
+/************************************HEADER TEMPLATE INFOCUENTA********/
+#info_cuenta{
+    width: 7%;
+    height: 80%;
+}
+#info_cuenta a{
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-image: url(../Assets/ico_persona.svg);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: center;
 }
 /************************************NAV**************************************************/
 #nav{
@@ -185,7 +247,7 @@ body{
 /************************************INDEX********************************************/
 #container{
     position: relative;
-    height: 110vh;
+    height: 80%;
     width: 100%;
 }
 #banner{
@@ -269,17 +331,17 @@ body{
     background-repeat: no-repeat;
 }
 #imagen_producto_espacio1{
-    background-image: url(/Assets/huevos_6u.svg);
+    background-image: url(../Assets/huevos_6u.svg);
 
 }
 #imagen_producto_espacio2{
-    background-image: url(/Assets/jabon_barra_manos.svg);
+    background-image: url(../Assets/jabon_barra_manos.svg);
 }
 #imagen_producto_espacio3{
-    background-image: url(/Assets/leche_600ml.svg);
+    background-image: url(../Assets/leche_600ml.svg);
 }
 #imagen_producto_espacio4{
-    background-image: url(/Assets/filete_salmon_300gr.svg);
+    background-image: url(../Assets/filete_salmon_300gr.svg);
 }
 .nombre_producto, .precio_producto_index{
     font-size: 1.5rem;
@@ -359,7 +421,7 @@ body{
 .producto_principal{
     position: absolute;
     display: grid;
-    grid-template-columns: 35% 23% 4% 4%;
+    grid-template-columns: 35% 25% 6% 6%;
     grid-template-rows: repeat(3, 1fr);
     margin-top: 3%;
     margin-left: 2.5%;
@@ -369,18 +431,19 @@ body{
 .producto_principal img{
     grid-column: 1;
     grid-row: 1/4;
-    background: #004d29;
+    width: 100%;
+    background-color: rgba(147, 148, 147, 0.1);
 }
 .producto_principal h1{
     font-family:"PT Sans", sans-serif;
     font-weight: 700 ;
-    font-size: 5rem;
+    font-size: 4rem;
     grid-column: 2;
     grid-row: 1/2;
     display: flex;
     flex-direction: column-reverse;
 }
-.producto_principal precio_sin_descuento{
+.producto_principal #precio_sin_descuento{
     font-family:"PT Sans", sans-serif;
     font-size: 1.5rem;
     grid-column: 3;
@@ -388,35 +451,26 @@ body{
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 5%;
-}
-.producto_principal precio_sin_descuento{
-    font-family:"PT Sans", sans-serif;
-    font-size: 1.5rem;
-    grid-column: 3;
-    grid-row: 1/2;
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 5%;
+    text-decoration: line-through;
+    font-size: 1.5rem;  
 }
 .dinero_pequeño{
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 16%;
 }
-#precio_sin_descuento{
-    text-decoration: line-through;
-    font-size: 1.5rem;
-    
-}
 #porcentaje_descuento{
     font-size: 1.5rem;
     margin-left: 30%;
+    margin-bottom: 5%;
 }
 #descripcion_del_producto{
     display: flex;
     align-items: center;
-    font-weight: 100;
+    font-weight: 500;
     font-family: "Open Sans", sans-serif;
+    grid-column: 2/4;
+    grid-row: 2/3;
 }
 .producto_principal h3{
     font-family:"PT Sans", sans-serif;
@@ -426,24 +480,16 @@ body{
 .segunda_columna_grid{
     margin-left: 15%;
 }
-
 #linea_separadora_productos_similares{
     position: absolute;
-<<<<<<< HEAD
-    width: 70%;
-    height: 2px;
-    border: 2.5px solid #BC8741;
-    top: 29px;
-    left: 15%;
-=======
     border: 3px solid  #BC8741;
     width: 45%;
     left: 2.5%;
     top: 100%;
->>>>>>> 81c434ee80cd646c8a5275790dd5b1ee2466f4f8
 }
+/***********BLOQUE COMPRAR-AÑADIR************/
 #bloque_comprar_anadir_a_cesta{
-    position: absolute;
+    position: absolute; 
     display: flex;
     justify-content: center;
     width: 40%;
@@ -488,7 +534,6 @@ body{
     background-color: #BC8741;
     border: 1px solid #BC8741;
     width: 80%;
-    padding: 5px;
     margin-top: 8px;
     height: 23%;
     border-radius: 25px;
@@ -496,6 +541,7 @@ body{
     font-weight: 600;
     font-size: 1.3rem;
 }
+/*********BLOQUE PRODUCTOS SIMILARES****/
 #bloque_productos_similares{
     position: relative;
     width: 50%;
@@ -504,9 +550,10 @@ body{
 #bloque_productos_similares h3{
     font-family: "Open Sans", sans-serif;
     text-align: center;
-    margin-top: 4%;
-    font-weight: 100;
+    margin-top: 1%;
+    font-weight: 500;
     font-size: 2rem;
+    color: #004D29;
 }
 #cuadrilla{
     position: relative;
@@ -514,29 +561,51 @@ body{
     width: 100%;
     height: 90%;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 80% 10%;
-    padding: 5% 5% 0% 5%;
+    grid-template-rows: 1fr;
+    padding: 0% 5% 0% 5%;
 }
 .caja_bloques{
+    position: relative;
+    display: grid;
     margin: 5%;
-    background: #004d29;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 10% ;
 }
-/************************************HEADER TEMPLATE INFOCUENTA********/
-#info_cuenta{
-    width: 7%;
-    height: 80%;
+.caja_bloques a:nth-child(1){
+    padding: 5% 0;   
+}
+#primer_producto_similar{
+    background-image: url(../Assets/huevos_30u.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#segundo_producto_similar{
+    background-image: url(../Assets/huevos_12u.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#tercer_producto_similar{
+    background-image: url(../Assets/huevos_21u.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#cuadrilla a:nth-child(2){
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.posicion_producto_similar{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.precio_producto_similar{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    position: absolute;
+    right: 0;
 }
 
-#info_cuenta a{
-    display: block;
-    width: 50%;
-    height: 100%;
-    background-image: url(/Assets/ico_persona.svg);
-    background-repeat: no-repeat;
-    background-size: 120px;
-    background-position: center;
-}
-/********************************************LISTA DE COMPRAS*********/
+/*******************************LISTA DE COMPRAS*********/
 .container{
     display: flex;
 }
@@ -598,7 +667,7 @@ body{
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     background-color: transparent;
-    background-image: url(/Assets/ico_basura.svg);
+    background-image: url(../Assets/ico_basura.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30px;
@@ -714,26 +783,65 @@ body{
     border-radius: 15px;
     height: 75%;
     font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    padding: 1%;
 }
-/********************************************CONFIRMAR PEDIDO**********/
+/*********************************CONFIRMAR PEDIDO**********/
 .primer_bloque_confirmar_compras{
     position: relative;
     width: 70%;
 }
-.bloque_direccion{
+.container_domicilio-sucursal{
+    position: relative;
+    padding: 3% 4%;
+    margin: 1% 2.5% 0% 5%;
+    width: 90%;
+    height: 35%;
+    background-color: #DDBE96;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+}
+.domicilio-sucursal{
     position: relative;
     display: grid;
-    margin: 1% 2.5% 1% 5%;
-    width: 60%;
-    height: 35%;
-    padding: 1% 4%;
-    background-color: #DDBE96;
+    grid-template-columns: 3% 30% 30% 1fr;
+    grid-template-rows: 50% 50%;
+}
+#sucursal p{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#sucursal button{
+    width: 15%;
+    height: 80%;
+    border-radius: 50%;
+    left: 4%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.domicilio-sucursal h4:nth-child(2n+0){
+    height: 50%;
+    top: 30%;
+    position: relative;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-left: 5%;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+.seleccion_envio-retiro{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-items: center;
 }
 .metodo_de_pago{
     position: absolute;
     display: grid;
     margin: 1% 2.5% 1% 5%;
-    width: 60%;
+    width: 90%;
     height: 35%;
     top: 40%;
     padding: 1% 4%;
@@ -986,7 +1094,7 @@ body{
     background-color: #DDBE96;
     height: 80%;
     width: 90%;
-    top: 9%;
+    top: 3%;
     border-radius: 30px;
     padding: 1.5% 4% 1.5% 4%;
 }
@@ -1128,26 +1236,257 @@ body{
 #codigo_empleado::placeholder{
     color: #004D29;
 }
+/**********************************PERSONAL BODEGA*****************/
+#container_bodega_entrega{
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:row;
+    position:relative;
+    padding:2.5% 5%;
+}
+.triple_bloque_bodega{
+    background-color: #DDBE96;
+    border-radius: 25px;
+}
+#primer_bloque_bodega{
+    width:20%;
+    height:50%;
+    position:relative;
+    margin-right:5%;
+    padding:2.5%;
+    border-radius: 25px;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 1fr 1fr 1fr;
+
+    text-align: center;
+    align-items: center;
+}
+.linea_primer_bloque_bodega{
+    width: 100%;
+    height: 3px;
+    background-color: #BC8741;
+    margin: 5% 0;
+}
+#primer_bloque_bodega h4{
+    font-size: 1.3rem;
+    color:black;
+    font-weight: 100;
+}
+#agregar_producto{
+    margin-top: 10%;
+    border-radius: 20px;
+    width: 85%;
+    position: relative;
+    left: 7.5%;
+    height: 70%;
+    border: 3px solid #79572c;
+    background-color: #004D29;
+    color: #BC8741;
+    font-weight: 700;
+    padding: 0 5%;
+}
+#pedidos_pendientes{
+    width:30%;
+    height:85%;
+    position:relative;
+    margin-right:5%;
+    display: flex;
+    flex-direction: column;
+    background-color: #EFDDC6;
+}
+#pedidos_pendientes >h2{
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    background-color: #DDBE96;
+    padding-top: 2.5%;
+}
+#pedidos_pendientes::after{
+    background-color: #BC8741;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 3px;
+    right: -8%;
+}
+.linea_segundo_bloque{
+    width: 100%;
+    height: 3px;
+    background-color: #BC8741;
+}
+.bloque_ticket{
+    position: relative;
+    width: 100%;
+    height: 15%;
+    padding: 2.5% 5% 2.5% 5%;
+    background-color: #DDBE96;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+}
+.bloque_ticket button{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: absolute;
+    width: 30%;
+    right: 0;
+    bottom: 30%;
+    text-decoration: underline;
+    background: transparent;
+    border: transparent;
+}
+#nombre_ticket{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-weight: 700;
+}
+#fecha_ticket{
+    display: flex;
+    align-items: center;    
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.bloque_ticket::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #BC8741;
+}
+#pedidos_completados{
+    width:30%;
+    height:85%;
+    position:relative;
+    margin-right:5%;
+    display: flex;
+    flex-direction: column;
+    background-color: #EFDDC6;
+}
+#pedidos_completados >h2{
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    background-color: #DDBE96;
+    padding-top: 2.5%;
+}
 /**********************************INFORMES GERENCIALES*********/
-.report-container {
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
-    padding: 20px;
-    margin: 20px auto;
+.container_reportes_gerenciales{
+    position:relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    padding: 2.5% 0;
+}
+.container_titulo_reportes{
+    background-color: #DDBE96; /* Fondo blanco semitransparente */
+    padding: 2.5% 5% 2.5% 5%;
     width: 80%;
-    border-radius: 10px;
+    height: 80%;
+    border-radius: 25px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
-.report {
-    margin-bottom: 20px;
+#gran_titulo_informe{
+    font-size: 2rem;
+    margin-bottom: 5%;
 }
-
-label {
+.container_reportes{
+    position:relative;
+    width: 100%;
+    height: 80%;
+    background-color: #EFDDC6;
+    padding: 4%;
+    border-radius: 25px;
+}
+.report {
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    position:relative;
+    width:100%;
+    height: 30%;
+    background-color:#DDBE96;
+    margin-bottom: 25px;
+    border-radius:25px;
+    padding: 2%;
+}
+.report button{
+    width: 5%;
+    height: 100%;
+    background-color: transparent;
+    border: transparent;
+}
+.report button img{
+    width: 100%;
+    height: 100%;
+}
+label{
     font-weight: bold;
 }
-
+label::after{
+    content: "";
+    position:absolute;
+    display:block;
+    margin-left: 25%;
+    bottom: 35%; 
+    width: 2px;
+    height: 30%;
+    background-color: black;
+}
 select {
-    padding: 5px 10px;
-    border: 1px solid #ccc;
+    padding:0 2%;
+    border: 1px solid #DDBE96;
+    background-color:#EFDDC6;
+    border-radius: 15px;
+    height: 100%
+}
+.primer_select{
+    margin-left: 25%;
+}
+/*******************************DOCUMENTO GERENCIA*******/
+.container_documento{
+    position:relative;
+    width: 100%;
+    height: 80%;
+    background-color: #EFDDC6;
+    padding: 4%;
+    border-radius: 25px;
+}
+.container_documento p{
+    display: inline;
+    font-size: 1.5rem;
+}
+#semana_documento{
+    font-weight: 700;
+    margin-bottom: 15%;
+}
+.container_documento p:nth-child(3){
+    display: block;
+}
+#zona_descarga{
+    margin-top: 5%;
+    background-color: #DDBE96;
+    width: 15%;
+    height: 50%;
+    border-radius: 25px;
+    padding: 2%;
+}
+#zona_descarga a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(../Assets/xls.svg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 /**************************************************FOOTER************************************/
 footer{

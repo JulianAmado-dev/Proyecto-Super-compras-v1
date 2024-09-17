@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Compras</title>
-    <link rel="stylesheet" href="/Vista/estilos.css">
+    <link rel="stylesheet" href="../Vista/estilos.css">
 </head>
 <body>
+  <!-------------------------------------HEADER------------------------------------------------------->
     <header id="header">
         <div id="logo_div">
-            <a href="" id="logo"></a>
+            <a href="/Modelo/index.html" id="logo"></a>
         </div>
         <div id="barra_busqueda">
             <input type="text" placeholder="Buscar..." id="busqueda_input">
             <input class="icoLupaBuscar" type="button">
         </div>
-        <div id="info_cuenta">
-            <a href=""></a>
+        <div>
+            <a href="/Modelo/crearCuenta.html" class="crear_iniciar">Crea <br>tu cuenta</a>
         </div>
+
+        <div>
+            <a href="/Modelo/iniciarSesion.html" class="crear_iniciar" id="mensaje_iniciar">Iniciar <br>sesión</a>
+        </div>
+
         <div id="carrito">
-            <img src="/Assets/carrito.svg" id="carrito_img">
+            <img src="../Assets/carrito.svg" id="carrito_img">
             <div id="ico_cantidad_productos_carro">
                 <div id="contenido_bola">5</div>
             </div>
             <div id="mensajeCarrito">
-                <h3>Carrito</h3>
+                <a href="/Modelo/listaDeCompras.html">Carrito</a>
             </div>
         </div>
     </header>
@@ -88,6 +94,7 @@
                 </div>
             </div>
         </section>
+<!----------------------RESUMEN------>
         <aside id="container_resumen_lista">
             <h1 class="titulo_resumen">RESUMEN</h1>
             <p class="total_parcial">Total parcial: </p>
@@ -97,8 +104,28 @@
             <div class="separador"></div>
             <p class="total_estimado">Total estimado: </p>
             <p class="valor_total_estimado">$40.610</p>
-            <button id="boton_hacer_pedido">Hacer pedido</button>   
+            <a href="/Modelo/confirmarPedido.html" id="boton_hacer_pedido">Hacer pedido</a>   
         </aside>
-    </section> 
+    </section>
+<!---------------------------------------FOOTER-------------------->
+    <footer>
+        <div class="bloques_footer" id="tarjeta_footer">
+            <img src="../Assets/ico_tarjeta_footer.png" alt="Paga con tarjeta de credito o en efectivo">
+            <h2>Paga con tarjeta o en efectivo</h2>
+            <p>Con Super Compras Pago, paga en cuotas y aprovecha la comodidad de financiación que te da tu banco, o hazlo con
+                efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </div>
+        <div class="bloques_footer" id="caja_footer">
+            <img src="../Assets/ico_cajas_footer.png" alt="envios gratis desde $100.000">
+            <h2>Envío gratis desde $100.000</h2>
+            <p>Con solo estar registrado en Supercompras, tienes envíos gratis en miles de productos seleccionados.</p>
+        </div>
+        <div class="bloques_footer" id="escudo_footer">
+            <img src="../Assets/ico_escudo_footer.png" alt="Seguridad de principio a fin">
+            <h2>Seguridad, de principio a fin</h2>
+            <p>¿No te gusta? ¡Devuélvelo! En Supercompras, no hay nada que no puedas hacer, porque estás siempre
+                protegido.</p>
+        </div>
+    </footer>
 </body>
 </html>

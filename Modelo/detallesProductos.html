@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Detalles del producto</title>
-  <link rel="stylesheet" href="/Vista/estilos.css">
+  <link rel="stylesheet" href="../Vista/estilos.css">
   <!-------------------------------------Fuentes------------------------------>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,33 +16,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
 </head>
-  <body>
-    <!-------------------------------HEADER-------------------------------------------------------->
+<body>
+  <!-------------------------------------HEADER------------------------------------------------------->
     <header id="header">
-      <div id="logo_div">
-        <a href="" id="logo"></a>
-      </div>
-      <div id="barra_busqueda">
-        <input type="text" placeholder="Buscar..." id="busqueda_input">
-        <input class="icoLupaBuscar" type="button">
-      </div>
-      <div>
-        <h3 class="crear_iniciar">Crear tu cuenta</h3>
-      </div>
-
-      <div>
-        <h3 class="crear_iniciar" id="mensaje_iniciar">Iniciar sesión</h3>
-      </div>
-
-      <div id="carrito">
-        <img src="/Assets/carrito.svg" id="carrito_img">
-        <div id="ico_cantidad_productos_carro">
-          <div id="contenido_bola">0</div>
+        <div id="logo_div">
+            <a href="/Modelo/index.html" id="logo"></a>
         </div>
-        <div id="mensajeCarrito">
-          <h3>Carrito</h3>
+        <div id="barra_busqueda">
+            <input type="text" placeholder="Buscar..." id="busqueda_input">
+            <input class="icoLupaBuscar" type="button">
         </div>
-      </div>
+        <div>
+            <a href="/Modelo/crearCuenta.html" class="crear_iniciar">Crea <br>tu cuenta</a>
+        </div>
+
+        <div>
+            <a href="/Modelo/iniciarSesion.html" class="crear_iniciar" id="mensaje_iniciar">Iniciar <br>sesión</a>
+        </div>
+
+        <div id="carrito">
+            <img src="../Assets/carrito.svg" id="carrito_img">
+            <div id="ico_cantidad_productos_carro">
+                <div id="contenido_bola">0</div>
+            </div>
+            <div id="mensajeCarrito">
+                <a href="/Modelo/listaDeCompras.html">Carrito</a>
+            </div>
+        </div>
     </header>
     <!--------------------------------NAV----------------------------------------------------->
     <nav id="nav">
@@ -62,10 +62,10 @@
       <!--------------------BLOQUE DE PRODUCTO PRINCIPAL----------------------------------------->
       <section class="container_producto_principal">
         <div class="producto_principal">
-          <img src="" alt="" />
-          <h1 class="segunda_columna_grid">$ 12.320</h1>
-          <h3 class="segunda_columna_grid" id="descripcion_del_producto">Cubetas de huevos 6u AA<br>Marca kikes</h3>
-          <h4 class="dinero_pequeño" id="precio_sin_descuento">20.350</h4>
+          <img src="../Assets/huevos_12u2.svg" alt="" />
+          <h1 class="segunda_columna_grid">$10.500</h1>
+          <h3 class="segunda_columna_grid" id="descripcion_del_producto">Caja de huevos blancos 12u AA<br>Marca kikes</h3>
+          <h4 class="dinero_pequeño" id="precio_sin_descuento">18.350</h4>
           <h4 class="dinero_pequeño" id="porcentaje_descuento">-40%</h4>
 
         </div>
@@ -89,37 +89,42 @@
         <h3>Productos similares</h3>
         <div id="cuadrilla">
           <div class="caja_bloques">
-            <img class="imagenProductosSimilares" src="" alt="" />
+            <a href="/Modelo/detallesProductos.html" class="imagenProductosSimilares" id="primer_producto_similar" alt="huevos Santa Reyes 30u"></a>
+            <a href="/Modelo/detallesProductos.html" class="posicion_nombre_similar" id="primer_producto_similar_nombre">Huevo Santa Reyes a 30u</a>
+            <h4 class="precio_producto_similar">$26.320</h4>
           </div>
           <div class="caja_bloques">
-            <img class="imagenProductosSimilares" src="" alt="" />
+            <a href="/Modelo/detallesProductos.html" class="imagenProductosSimilares" id="segundo_producto_similar" alt="Huevo Aa Rojo Santa Reyes Pet 12u"></a>
+            <a href="/Modelo/detallesProductos.html" class="posicion_nombre_similar" id="segundo_producto_similar_nombre">Huevo Aa Rojo Santa Reyes Pet 12u</a>
+            <h4 class="precio_producto_similar">$10.500</h4>
           </div>
           <div class="caja_bloques">
-            <img class="imagenProductosSimilares" src="" alt="" />
+            <a href="/Modelo/detallesProductos.html" class="imagenProductosSimilares" id="tercer_producto_similar" alt="Huevos Bonegg Santa Reyes 21u"></a>
+            <a href="/Modelo/detallesProductos.html" class="posicion_nombre_similar" id="tercer_producto_similar_nombre">Huevos Bonegg Santa Reyes 21u</a>
+            <h4 class="precio_producto_similar">$20.250</h4>
           </div>
         </div>
       </section>
     </section>
-<<<<<<< HEAD
-
-
-  <footer>
-      <div class= "bloques_footer" id="targeta_footer">
-          <h1>Paga con targeta o en efectivo</h1>
-          <p>Con Mercado Pago, paga en cuotas y aprovecha la comodidad de financiación que te da tu banco, o hazlo con efectivo en puntos de pago. ¡Y siempre es seguro!</p>                    
-      </div>
-
-      <div class= "bloques_footer" id="caja_footer">
-          <h1>Envío gratis desde $ 100.000</h1>
-=======
+<!----------------------------FOOTER------------------->
     <footer>
         <div class="bloques_footer" id="tarjeta_footer">
-          <img src="/Assets/ico_tarjeta_footer.png" alt="Paga con tarjeta de credito o en efectivo">
-          <h2>Paga con tarjeta o en efectivo</h2>
-          <p>Con Super Compras Pago, paga en cuotas y aprovecha la comodidad de financiación que te da tu banco, o hazlo
-            con
-            efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            <img src="../Assets/ico_tarjeta_footer.png" alt="Paga con tarjeta de credito o en efectivo">
+            <h2>Paga con tarjeta o en efectivo</h2>
+            <p>Con Super Compras Pago, paga en cuotas y aprovecha la comodidad de financiación que te da tu banco, o hazlo con
+                efectivo en puntos de pago. ¡Y siempre es seguro!</p>
         </div>
         <div class="bloques_footer" id="caja_footer">
-          <img src="/Assets/ico_cajas_footer.png" alt="envios gratis desde $100.000">
-          <h2>Envío gratis desde $100.000</h2>
+            <img src="../Assets/ico_cajas_footer.png" alt="envios gratis desde $100.000">
+            <h2>Envío gratis desde $100.000</h2>
+            <p>Con solo estar registrado en Supercompras, tienes envíos gratis en miles de productos seleccionados.</p>
+        </div>
+        <div class="bloques_footer" id="escudo_footer">
+            <img src="../Assets/ico_escudo_footer.png" alt="Seguridad de principio a fin">
+            <h2>Seguridad, de principio a fin</h2>
+            <p>¿No te gusta? ¡Devuélvelo! En Supercompras, no hay nada que no puedas hacer, porque estás siempre
+                protegido.</p>
+        </div>
+    </footer>
+</body>
+</html>
