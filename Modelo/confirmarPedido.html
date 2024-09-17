@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Confirmar pedido</title>
+        <link rel="stylesheet" href="/Vista/estilos.css">
+        <!-------------------------------------Fuentes------------------------------>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <div id="logo_div">
+                <a href="" id="logo"></a>
+            </div>
+            <div id="barra_busqueda">
+                <input type="text" placeholder="Buscar..." id="busqueda_input">
+                <input class="icoLupaBuscar" type="button">
+            </div>
+            <div id="info_cuenta">
+                <a href=""></a>
+            </div>
+            <div id="carrito">
+                <img src="/Assets/carrito.svg" id="carrito_img">
+                <div id="ico_cantidad_productos_carro">
+                    <div id="contenido_bola">5</div>
+                </div>
+                <div id="mensajeCarrito">
+                    <h3>Carrito</h3>
+                </div>
+            </div>
+        </header>
+
+        <section class="container">
+            <div class="primer_bloque_confirmar_compras">
+                <section class="container_listas">
+                    <input type="radio" class="seleccion_envio-retiro">
+                    <h4 id="mensaje_entrega_domicilio">Entrega a domicilio </h4>
+                    <h4 id="mensaje_direccion">Dirección de entrega: </h4>
+                    <p id="">Casita</p>
+                    <p>Modificar</p>
+                    <p>Agregar</p>
+    
+                    <input type="radio" class="seleccion_envio-retiro">
+                    <h4>Entrega en sucursal: </h4>
+                    <p>En </p>
+                    <button></button>
+                    <h4>Super Compras Plaza imperial</h4>
+                    <img src="" alt="">
+                    <p>Retira hoy-Gratis</p>
+                </section>
+    
+                <section class="metodo_de_pago">
+                    <h1 id="titulo_metodo_de_pago">Métodos de pago</h1>
+                    
+                    <input type="radio">
+                    <img class="ico_mapa" src="" alt="">
+                    <h2 id="pago_contra_entrega" class="texto_items_de_pago">Pago contra entrega</h2>
+    
+                    <input type="radio">
+                    <img class="tajeta_metodo_de_pago" src="" alt="">
+                    <h2 id="" class="texto_items_de_pago">5370 68****************4489</h2>
+                    
+                    <input type="radio">
+                    <img class="tajeta_metodo_de_pago" src="" alt="">
+                    <h2 id="" class="texto_items_de_pago">Añade una nueva tarjeta</h2>
+                </section>
+                
+            </div>
+            
+            <aside class="resumen_confirmacion">
+                <h1>Resumen</h1>
+                <h3 id="titulo_subtotal">Subtotal: </h2>
+                <p id="valor_subtotal">$40.610</p>
+
+                <h3 id="titulo_total_envio">Total de envio: </h2>
+                <p id="valor_total_envio">$5.900</p>
+                
+                <h2 id="titulo_total_confirmacion">Total: </h2>
+                <p id="valor_total_confirmacion">$46.610</p>
+            </aside>
+        </section>
+    </body>
+</html>

@@ -4,58 +4,50 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Iniciar Sesion</title>
-            <link rel="stylesheet" href="/Users/Aprendiz/Documents/Proyecto Supercompras/Pantallas html/Vista/estilosSesion.css">
-            <link rel="stylesheet" href="/Users/Aprendiz/Documents/Proyecto Supercompras/Pantallas html/Vista/estilos.css">
+            <link rel="stylesheet" href="/Vista/estilos.css">
         </head>
         <body> 
-            <header>
-                <img src="logo.png" id="logo">
-                
-                <div id="crear_cuenta">
-                    <div id="contenido_crear_cuenta">Crea tu cuenta</div>
+            <header id="header">
+                <div id="logo_div">
+                    <a href="" id="logo"></a>
                 </div>
-            
-                <div id="iniciar_sesion">
-                    <div id="contenido_iniciar_sesion">Iniciar sesión</div>
-                </div>
-                
-            </header> 
+            </header>
 
-            <section id="container">
-                <div id="bloque_sesion">
-                    <div id="titulo_sesion">Iniciar sesion</div>
+            <section class="container_sesion_crear">
+                <div class="bloque_sesion_crear" id="bloque_sesion">
+                    <h2 id="titulo_sesion" >Iniciar sesión</h2>
                     <div class="linea_sesion_crear"></div>
                     
+                    <h2 class="titulos_iniciar_crear" id="sesion_titulo_nombre">Nombre</h2>
+                    <input type="text" class="barras_iniciar_crear" id="sesion_barra_nombre"></input>
                     
-                    <div class="titulos_iniciar_crear" id="sesion_titulo_nombre">Nombre</div>
-                    <div class="barras_iniciar_crear" id="sesion_barra_nombre"></div>
+                    <h2 class="titulos_iniciar_crear" id="sesion_titulo_contrasena">Contraseña</h2>
+                    <input type="text" class="barras_iniciar_crear" id="sesion_barra_contrasena"></input>
                     
-                    
-                    <div class="titulos_iniciar_crear" id="sesion_titulo_contrasena">Contraseña</div>
-                    <div class="barras_iniciar_crear" id="sesion_barra_contraseña"></div>
-                    
-                    
-                    
-                    <div class="boton" id="boton_ingresar">Ingresar</div>
-                    <div id="no_tienes_cuenta">¿No tienes cuenta? ¡crea una!</div>
-                        <div id="linea_no_cuenta"></div>
+                    <button class="boton_ingresar_crear" id="boton_ingresar">Ingresar</button>
+                    <h4 id="no_tienes_cuenta">¿No tienes cuenta?</h4>
+                    <div id="linea_no_cuenta"></div>
+                    <h4 id="crea_una">¡crea una!</h4>
                 </div>
             </section>
-
-
+<!---------------------------------------FOOTER-------------------->
             <footer>
-                <div class= "bloques_footer" id="targeta_footer">
-                    <h1>Paga con targeta o en efectivo</h1>
-                    <p>Con Mercado Pago, paga en cuotas y aprovecha la comodidad de financiación que te da tu banco, o hazlo con efectivo en puntos de pago. ¡Y siempre es seguro!</p>                    
+                <div class="bloques_footer" id="tarjeta_footer">
+                    <img src="/Assets/ico_tarjeta_footer.png" alt="Paga con tarjeta de credito o en efectivo">
+                    <h2>Paga con tarjeta o en efectivo</h2>
+                    <p>Con Super Compras Pago, paga en cuotas y aprovecha la comodidad de financiación que te da tu banco, o hazlo con
+                        efectivo en puntos de pago. ¡Y siempre es seguro!</p>
                 </div>
-
-                <div class= "bloques_footer" id="caja_footer">
-                    <h1>Envío gratis desde $ 100.000</h1>
+                <div class="bloques_footer" id="caja_footer">
+                    <img src="/Assets/ico_cajas_footer.png" alt="envios gratis desde $100.000">
+                    <h2>Envío gratis desde $100.000</h2>
                     <p>Con solo estar registrado en Supercompras, tienes envíos gratis en miles de productos seleccionados.</p>
                 </div>
-                <div class= "bloques_footer" id="escudo_footer">
-                    <h1>Seguridad, de principio a fin</h1>
-                    <p>¿No te gusta? ¡Devuélvelo! En Supercompras, no hay nada que no puedas hacer, porque estás siempre protegido.</p>
+                <div class="bloques_footer" id="escudo_footer">
+                    <img src="/Assets/ico_escudo_footer.png" alt="Seguridad de principio a fin">
+                    <h2>Seguridad, de principio a fin</h2>
+                    <p>¿No te gusta? ¡Devuélvelo! En Supercompras, no hay nada que no puedas hacer, porque estás siempre
+                        protegido.</p>
                 </div>
             </footer>
         </body>

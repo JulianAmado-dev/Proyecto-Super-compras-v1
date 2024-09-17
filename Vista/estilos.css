@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital@0;1&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,15 +10,13 @@ body{
     background-color: rgba(255, 255, 255);
     background-image: url(/Assets/fondo_container_transparente.svg);
     background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-repeat:repeat;
     position: relative;
     height: 100vh;
     width: 100%;
 }
-
-
 /*********************************** HEADER ***************************************************/
-header{
+#header{
     background-color: #004d29;
     position: relative;
     display: flex;
@@ -25,27 +25,26 @@ header{
     align-items: center;
     justify-content: space-evenly;
 }
-
+#logo_div{
+    width: 276px;
+    height: 70px;
+}
 #logo{
     position: absolute;
     background-image: url(/Assets/logo3.png);
     background-size: 350px 150px;
     background-repeat: no-repeat;
-    width: 280px;
+    width: 276px;
     height: 70px;
     top: 15px;
-    left: 132px;
     overflow: hidden;
 }
-
 #barra_busqueda{
     position: relative;
-    width: 25%;
+    width: 30%;
     height: 40px;
     border-radius: 30px;
-    margin-left: 283px;
 }
-
 #busqueda_input{
     font-size: larger;
     font-family: 'Courier New', Courier, monospace ;
@@ -53,21 +52,19 @@ header{
     width: 100%;
     height: 100%;
     padding-left: 15px;
-    background-color: #d4d0ca;
+    background-color: #f5f4f3;
 }
-
 .icoLupaBuscar{
     position: absolute;
     background: url(/Assets/lupa_ico.png) no-repeat 50% #c29861;
-    width: 50px;
+    width: 15%;
     height: 30px;
     border: 1px solid #c29861;
     border-radius: 10px;
-    left: 88%;
-    top: 5px;
+    left: 83%;
+    top: 5.25px;
     background-size: 50px 30px;
 }
-
 .crear_iniciar{
     font-size: larger;
     font-family: 'Courier New', Courier, monospace;
@@ -76,7 +73,6 @@ header{
     width: 93px;
     text-align-last: center;
 }
-
 #mensaje_iniciar{
     width: 85px;
 }
@@ -86,14 +82,13 @@ header{
     height: 45%;
     top:3%
 }
-
 #carrito_img{
     position: absolute;
-    width: 40px;
-    height: 40px;
-    top: -25%;
+    width: 100;
+    height: 65px;
+    top: -55%;
+    left: -95%;
 }
-
 #mensajeCarrito{
     position: absolute;
     font-family: 'Courier New', Courier, monospace;
@@ -104,42 +99,56 @@ header{
     top: 27px;
     font-size: 1em;
 }
-
 #ico_cantidad_productos_carro{
     position: absolute;
-    background-color:#e5c499 ;
-    width: 40%;
+    background-color: #e5c499;
+    width: 42%;
     height: 50%;
     border-radius: 50%;
-    left: 80%; 
-}
+    left: 105%;
 
+}
 #contenido_bola{
     position: absolute;
-    left: 25%;
+    left: 19%;
     top: 15%;
     font-family: 'Courier New', Courier, monospace;
 }
 /************************************NAV**************************************************/
-
 #nav{
     position: relative;
     display: flex;
     width: 100%;
-    height: 40px;
-    align-items: center ;
+    height: 56px;
+    align-items: center;
 
 }
-
-.barras{
+#linea_separadora1{
     position: absolute;
-    width: 9%;
-    height: 90%;
-    background-color: #BC8741;
-    border-radius: 30px; 
-    margin-top: 5px;
+    width: 85%;
+    height: 2px;
+    border: 2.5px solid #BC8741;
+    top: 4px;
+    left: 7.5%;
 }
-
+.barras{
+    height: 36px;
+    background-color: #BC8741;
+    border-radius: 30px;
+    margin-top: 11px;
+}
+#barra_categorias{
+    position: absolute;
+    left: 12%;
+    top: 2%;
+    width: 175px;
+}
+#barra_ofertas{
+    position: absolute;
+    width: 137px;
+    left: 30%;
+    top: 2%;
+}
 .texto_barras_nav{
     position: absolute;
     width:100% ;
@@ -151,7 +160,6 @@ header{
     font-family: 'Courier New', Courier, monospace;
     color: #79572c;
 }
-
 .flecha_menu_desplegable{
     position: absolute;
     width: 0%;
@@ -163,130 +171,286 @@ header{
     top: 28%;
     color: #79572c;
 }
-
 #flecha_ofertas{
-    left: 75%;
+    left: 78%;
 }
-
-#barra_categorias{
+#linea_separadora2{
     position: absolute;
-    left: 12%;
-    top: 2%;
-}
-
-#barra_ofertas{
-    position: absolute;
-    width: 7%;
-    left: 23%;
-    top: 2%;
-}
-
-#linea_separadora{
-    position: relative;
     width: 70%;
     height: 2px;
     border: 2.5px solid #BC8741;
-    top: 29px;
+    top: 52px;
     left: 15%;
 }
-
-
-/************************************CONTAINER********************************************/
+/************************************INDEX********************************************/
 #container{
     position: relative;
-    height: 100%;
+    height: 110vh;
     width: 100%;
 }
 #banner{
-    position: absolute;
+    position: relative;
     display: flex;
-    width: 100%;
-    margin-top: 8.5px;
-    height: 308.5px;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 308.5px;
 }
 #fondo_banner{
     position: absolute;
     width: 90%;
     height: 300px;
     left:5%;
-    top:2.5%;
 }
-
 #contenido_banner{
     position: absolute;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Open Sans", sans-serif;
     width: 100%;
-    height: 10%;
+    height: 50%;
     font-size: 350%;
-    color: rgb(255, 227, 133);
-    font-weight: bolder;
+    color: #f8e9a6; 
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-weight: 700;
     text-align: center;
-
 }
-
 #titulo_ofertas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 1%;
+}
+#titulo_ofertas h3{
     position: absolute;
-    height: 5%;
-    width: 20%;
-    left: 40%;
-    top: 45%;
+    font-style: italic;
+    font-family:  "DM Serif Display", serif;
+    color: rgb(221, 7, 0);
     font-size: 200%;
-    font-weight: bolder;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(23, 139, 101);
+    text-align: center;
 }
-
 #ofertas{
-    position: absolute;
-    height: 30%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 44%;
     width: 90%;
-    background-color: #c29861;
-    top: 55%;
     left: 5%;
-
-}   
-
-.productos{
-    position: absolute;
-    top:10%;
-    height: 20%;
-    width: 18%;
-    background-color: #000000;
-    display: none;
 }
-/********************************DETALLES DE PRODUCTO************/
+.contenedor_ofertas{
+    position: relative;
+    display: flex;
+    height: 318px;
+    width: 100%;
+    flex-direction: column;
+    padding: 6%;
+}
+#contenedor1{
+    grid-column: 1/2;
+}
+#contenedor2{
+    grid-column: 2/3;
+}
+#contenedor3{
+    grid-column: 3/4;
+}
+#contenedor4{
+    grid-column: 4/5;
+}
+.imagen_producto{
+    position: absolute;
+    width: 270px;
+    height: 235px;
+    top: 0;
+}
+#imagen_producto_espacio1, #imagen_producto_espacio2, #imagen_producto_espacio3, #imagen_producto_espacio4{
+    background-size: auto 190px;
+    background-repeat: no-repeat;
+}
+#imagen_producto_espacio1{
+    background-image: url(/Assets/huevos_6u.svg);
 
+}
+#imagen_producto_espacio2{
+    background-image: url(/Assets/jabon_barra_manos.svg);
+}
+#imagen_producto_espacio3{
+    background-image: url(/Assets/leche_600ml.svg);
+}
+#imagen_producto_espacio4{
+    background-image: url(/Assets/filete_salmon_300gr.svg);
+}
+.nombre_producto, .precio_producto_index{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.nombre_producto{
+    display: block;
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    top: 65%;
+}
+.precio_producto_index{
+    display: inline-block;
+    position: absolute;
+    height: 15%;
+    width: 50%;
+    top: 80%;
+    padding-left: 8%;
+    font-weight: bolder;
+}
+.agregar_al_carrito{
+    display: flex;
+    position: relative;
+    background-color: #BC8741;
+    border: transparent;
+    border-radius: 15px;
+    width: 30%;
+    height: 11%;
+    top: 83%;
+    left: 55%;
+    margin-bottom: 2%;
+    padding: 1%;
+    flex-direction: row-reverse;
+}
+.agregar_al_carrito h4{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 6%;
+    right: 15%;
+    color: white;
+    font-weight: 100;
+}
+.imagen_agregar_al_carrito{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 13%;
+    left: 0;
+}
+#slider_ofertas{
+    position: absolute;
+    grid-column: 4 / 5;
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    right: -10%;
+    top: 18%;
+    border: transparent;
+    background-color: transparent;
+}
+#slider_ofertas img{
+    width: auto;
+    height: 100%;
+}
+/********************************DETALLES DE PRODUCTO*****************/
 .container{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: aliceblue;
 }
-#producto_principal{
+.container_producto_principal{
     position: relative;
-    background-color: papayawhip;
     width: 100%;
     height: 50%;
 }
+.producto_principal{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 35% 23% 4% 4%;
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 3%;
+    margin-left: 2.5%;
+    width: 90%;
+    height: 70%;
+}
+.producto_principal img{
+    grid-column: 1;
+    grid-row: 1/4;
+    background: #004d29;
+}
+.producto_principal h1{
+    font-family:"PT Sans", sans-serif;
+    font-weight: 700 ;
+    font-size: 5rem;
+    grid-column: 2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.producto_principal precio_sin_descuento{
+    font-family:"PT Sans", sans-serif;
+    font-size: 1.5rem;
+    grid-column: 3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 5%;
+}
+.producto_principal precio_sin_descuento{
+    font-family:"PT Sans", sans-serif;
+    font-size: 1.5rem;
+    grid-column: 3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 5%;
+}
+.dinero_pequeño{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 16%;
+}
+#precio_sin_descuento{
+    text-decoration: line-through;
+    font-size: 1.5rem;
+    
+}
+#porcentaje_descuento{
+    font-size: 1.5rem;
+    margin-left: 30%;
+}
+#descripcion_del_producto{
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+}
+.producto_principal h3{
+    font-family:"PT Sans", sans-serif;
+    grid-column: 2;
+    grid-row: 2/3;
+}
+.segunda_columna_grid{
+    margin-left: 15%;
+}
+
 #linea_separadora_productos_similares{
     position: absolute;
+<<<<<<< HEAD
     width: 70%;
     height: 2px;
     border: 2.5px solid #BC8741;
     top: 29px;
     left: 15%;
+=======
+    border: 3px solid  #BC8741;
+    width: 45%;
+    left: 2.5%;
+    top: 100%;
+>>>>>>> 81c434ee80cd646c8a5275790dd5b1ee2466f4f8
 }
 #bloque_comprar_anadir_a_cesta{
     position: absolute;
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: 40%;
     height: 20%;
     background-color: #DDBE96;
-    left: 60%;
-    top: 40%;
+    left: 52.5%;
+    top: 50%;
     border-radius: 25px;
 }
 .bloque_cantidad{
@@ -299,6 +463,9 @@ header{
 }
 .bloque_cantidad h5{
     padding: 17px;
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
 }
 .botones_cantidad{
     width: 20px;
@@ -326,48 +493,734 @@ header{
     height: 23%;
     border-radius: 25px;
     color: aliceblue;
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 #bloque_productos_similares{
     position: relative;
-    background-color: #e5c499;
     width: 50%;
-    height: 30vh;
-
+    height: 40%;
 }
-
-
-/**************************************************FOOTER************************************/
-footer{
-    background-color: #004d29;
-    width: 100%;
-    height: 35%;
-    position: relative;
-}
-
-.bloques_footer{
-    position: absolute;
-    width: 20%;
-    height: 70%;
-    display: inline-block;
-    top:10%;
-    font-family: 'Courier New', Courier, monospace ;
-    color:#c29861;
+#bloque_productos_similares h3{
+    font-family: "Open Sans", sans-serif;
     text-align: center;
-
+    margin-top: 4%;
+    font-weight: 100;
+    font-size: 2rem;
+}
+#cuadrilla{
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80% 10%;
+    padding: 5% 5% 0% 5%;
+}
+.caja_bloques{
+    margin: 5%;
+    background: #004d29;
+}
+/************************************HEADER TEMPLATE INFOCUENTA********/
+#info_cuenta{
+    width: 7%;
+    height: 80%;
 }
 
-.bloques_footer >p{
-    color: rgb(158, 158, 158);
+#info_cuenta a{
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-image: url(/Assets/ico_persona.svg);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: center;
 }
-
-#targeta_footer{
+/********************************************LISTA DE COMPRAS*********/
+.container{
+    display: flex;
+}
+#container_listas{
+    position: relative;
+    display: grid;
+    width: 60%;
+    height: 80%;
+    margin: 1% 2.5% 0 5%;
+    padding: 1% 4%;
+    background-color: #DDBE96;
+    border-radius: 25px;
+    grid-template-rows: 10% 1fr*5;
+}
+#lista_titulo{
+    display: flex;
+    align-items: center;
+}
+.producto_de_lista{
+    display: grid;
+    position: relative;
+    grid-template-columns: 20% 74% 6%;
+    grid-template-rows: 1fr 1fr;
+}
+.producto_de_lista::before{
+    background-color: #BC8741;
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: -7%;
+    position: absolute;
+    top: 50.2%;
+    width: 110%;
+    left: -5%;
+}
+.producto_de_lista::after{
+    background-color: #BC8741;
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: 5.9%;
+    position: absolute;
+    top: 50%;
+    width: 110%;
+    left: -5%;
+}
+.producto_de_lista .imagen_producto_lista{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: #004D29;
+    margin: 5%;
+}
+.nombre_producto_lista{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 2.5% 0 0 10%;
+}
+.bote_de_basura{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    background-color: transparent;
+    background-image: url(/Assets/ico_basura.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    border: transparent;
+    height: 50%;
+    width: 50%;
+    margin-top: 31%;
+    overflow: hidden;
+}
+.nombre_producto_lista ,.precio_producto,.combo_cantidad {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+.precio_producto{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 10%;
+}
+.combo_cantidad{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    position: absolute;
+    right: 0;
+    width: 30%;
+    justify-content: flex-end;
+}
+.precio_producto{
+    font-weight: 700;
+}
+.combo_cantidad p{
+    margin: 0 10%;
+}
+#container_resumen_lista{
+    background-color: #DDBE96;
+    width: 24%;
+    height: 25%;
+    top: 0;
+    right: 0;
+    margin: 1% 10% 0 0;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 25% 20% 20% 15% 20%;
+}
+.titulo_resumen{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    position: absolute;
+    top: 25%;
     left: 10%;
 }
+.total_parcial{
+    position: absolute;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    left: 20%;
+    font-weight: 300;
+}
+.valor_total_parcial{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 700;
+}
+.ahorrado{
+    position: absolute;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    left: 20%;
+    font-weight: 300;
+}
+.separador{
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    background-color: #BC8741;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: -20%;
+    width: 90%;
+    left: 5%;
+}
+.valor_ahorrado{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-weight: 700;
+}
+.total_estimado{
+    position: absolute;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    left: 20%;
+    font-weight: 300;
+}
+.valor_total_estimado{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    font-weight: 700;
+}
+#boton_hacer_pedido{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    background-color: #BC8741;
+    position: absolute;
+    color: #e2e2e2;
+    margin-bottom: 3%;
+    width: 80%;
+    left: 10%;
+    border: transparent;
+    border-radius: 15px;
+    height: 75%;
+    font-weight: 700;
+}
+/********************************************CONFIRMAR PEDIDO**********/
+.primer_bloque_confirmar_compras{
+    position: relative;
+    width: 70%;
+}
+.bloque_direccion{
+    position: relative;
+    display: grid;
+    margin: 1% 2.5% 1% 5%;
+    width: 60%;
+    height: 35%;
+    padding: 1% 4%;
+    background-color: #DDBE96;
+}
+.metodo_de_pago{
+    position: absolute;
+    display: grid;
+    margin: 1% 2.5% 1% 5%;
+    width: 60%;
+    height: 35%;
+    top: 40%;
+    padding: 1% 4%;
+    background-color: #DDBE96;
+}
+.resumen_confirmacion{
+    display: grid;
+    position: relative;
+    background-color: #DDBE96;
+    width: 24%;
+    height: 25%;
+    margin: 1% 10% 0 0;
+    border-radius: 25px;
+    overflow: hidden;
 
-#caja_footer{
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 25% 20% 20% 15% 20%;
+}
+/**********************************INICIAR SESION*******/
+.container_sesion_crear{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.bloque_sesion_crear{
+    background-color: #caa36f;
+    position: relative; 
+    height: 80%;
+    width: 30%;
+    border-radius: 30px;
+    padding: 3%;
+}
+#bloque_sesion{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 5% 10% 5% 10% 10% 30%;
+}
+#titulo_sesion{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+.linea_sesion_crear{
+    position: absolute;
+    height: 2.5%;
+    width: 100%;
+    top: 80%;
+    background-color: #BC8741;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.titulos_iniciar_crear{
+    position: absolute;
+    width: 80%;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight: 100;
+    padding-bottom: 5%;
+}
+#sesion_titulo_nombre{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#sesion_titulo_contrasena{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.barras_iniciar_crear{
+    position: absolute;
+    background-color: whitesmoke;
+    height: 60%;
+    width: 100%;
+    left: -2.5%;
+    border: 4px solid #BC8741;
+    border-radius: 30px;
+    padding-left: 5%;
+    margin-top: 3%;
+}
+#sesion_barra_nombre{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#sesion_barra_contrasena{
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+#boton_ingresar, #no_tienes_cuenta, #linea_no_cuenta, #crea_una{
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+.boton_ingresar_crear{
+    position: absolute;
+    background-color: #BC8741;
+    border-radius: 30px;
+    text-align: center;
+    color: aliceblue;
+    border: transparent;
+    font-weight: 700;
+}
+#boton_ingresar{
+    top: 0;
     left: 40%;
+    height: 20%;
+    width: 20%;
+    padding: 1%;
+}
+#no_tienes_cuenta{
+    position: absolute; 
+    top: 70%;
+    height: 3%;
+    width: 60%;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+#linea_no_cuenta{
+    position: absolute;
+    background-color: #BC8741;
+    top: 82%;
+    height: 2.5%;
+    width: 55%;
+}
+#crea_una{
+    position: absolute; 
+    top: 82%;
+    height: 3%;
+    width: 50%;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+/******************************CREAR CUENTA***********/
+#container_crear{
+    padding: 4%;
+    height: 100vh;
+}
+.bloque_sesion_crear{
+    background-color: #caa36f;
+    position: relative; 
+    height: 80%;
+    width: 30%;
+    border-radius: 30px;
+    padding: 3%;
+}
+#bloque_crear{
+    height: 100%;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% repeat(5, 5% 10%) 1fr;
+    top: -5%;
+}
+#titulo_crear{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+#linea_crear{
+    height: 5%;
+}
+#crear_titulo_nombre{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#crear_barra_nombre{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#crear_titulo_apellidos{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+#crear_barra_apellidos{
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+#crear_titulo_correo{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    width: 100%;
+}
+#crear_barra_correo{
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+#crear_titulo_direccion{
+    grid-column: 1/2;
+    grid-row: 8/9;
+    width: 100%;
+    font-size: 1.42rem;
+}
+#crear_barra_direccion{
+    grid-column: 1/2;
+    grid-row: 9/10;
+}
+#crear_titulo_contrasena{
+    grid-column: 1/2;
+    grid-row: 10/11;
+}
+#crear_barra_contrasena{
+    grid-column: 1/2;
+    grid-row: 11/12;
+}
+#boton_crear, #ya_tienes_cuenta, #linea_ya_cuenta{
+    grid-column: 1/2;
+    grid-row: 12/13;
+}
+#boton_crear{
+    top: 0;
+    left: 35%;
+    height: 50%;
+    width: 30%;
+}
+#ya_tienes_cuenta{
+    position: absolute;
+    font-size: 0.9rem;
+    bottom: -20%;
+    font-weight: 100;
+}
+#linea_ya_cuenta{
+    position: absolute;
+    background-color: #BC8741;
+    bottom: -30%;
+    height: 7%;
+    width: 65%;
+}
+/********************INFORMACION DE CUENTA***********/
+#container_info{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.gran_bloque{
+    position: relative;
+    background-color: #DDBE96;
+    height: 80%;
+    width: 90%;
+    top: 9%;
+    border-radius: 30px;
+    padding: 1.5% 4% 1.5% 4%;
+}
+#info_cuenta_title{
+    position: relative;
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #79572c;
+}
+.linea_info{
+    width: 100%;
+    height: 1%;
+    background-color: #BC8741;
+}
+#doble_bloque_info{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 88.5%;
+}
+#bloque_info_izq{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 8% repeat(4,15% 8%);
+    width: 50%;
+    height: 88.5%;
+}
+.titulos_info{
+    position: absolute;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight: 700;
+}
+.titulos_info_contenido{
+    position: absolute;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight: 700;
+    opacity: 0.8;
+}
+.espacio_info_contenido{
+    position: relative;
+    border-radius: 15px;
+    background-color: rgba(36, 163, 74, 0.5);
+    padding: 1% 0 1% 5%;
+}
+.boton_agregar_cambiar{
+    position: absolute;
+    height: 70%;
+    width: 30%;
+    right: 10%;
+    border-radius: 15px;
+    border: 3px solid #79572c;
+    background-color: #004D29;
+    opacity: 1;
+    color: #BC8741;
+}
+#info_titulo_nombres{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: absolute;
+    bottom: 0;
+}
+#espacio_info1{
+    display: flex;  
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#info_titulo_correo_electronico{
+    position: absolute;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    bottom: 0;
+}
+#espacio_info2{
+    display: flex;  
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+#info_titulo_direccion{
+    position: absolute;
+    grid-column: 1/2;
+    grid-row: 5/6;
+    bottom: 0;
+}
+#espacio_info3{
+    display: flex;  
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+#info_titulo_contraseña{
+    position: absolute;
+    grid-column: 1/2;
+    grid-row: 7/8;
+    bottom: 0;
+}
+#espacio_info4{
+    display: flex;  
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 8/9;
+}
+#bloque_info_rght{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 50%;
+    height: 88.5%;
+    padding: 5%;
+}
+.pregunta_codigo{
+    width: 100%;
+    height: 10%;
+    font-size: 1.2rem;
+    margin-bottom: 10%;
+    text-align: center;
+    color: #004d29;
+}
+#codigo_empleado{
+    position: relative;
+    width: 30%;
+    height: 10%;
+    padding: 2%;
+    border-radius: 25px;
+    border: transparent;
+}
+#codigo_empleado::placeholder{
+    color: #004D29;
+}
+/**********************************INFORMES GERENCIALES*********/
+.report-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.report {
+    margin-bottom: 20px;
 }
 
+label {
+    font-weight: bold;
+}
+
+select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+/**************************************************FOOTER************************************/
+footer{
+    background-color: #004D29;
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 50%;
+}
+.bloques_footer{
+    position: absolute;
+    width: auto;
+    height: 100%;
+    padding: 10%;
+    color:#c29861;
+    text-align: center;
+}
+.bloques_footer img{
+    width: 150px;
+    height: 100px;
+}
+.bloques_footer >p{
+    margin-top: 15px;
+    color: rgb(158, 158, 158);
+}
+#tarjeta_footer{
+    grid-column: 1/2;
+}
+#caja_footer{
+    grid-column: 2/3;
+}
+#caja_footer::before{
+    background-color: #e2e2e2;
+    content: "";
+    display: block;
+    height: 65px;
+    margin-top: -32.5px;
+    position: absolute;
+    top: 50%;
+    width: 1px;
+    left: 0;
+}
+#caja_footer::before{
+    background-color: gray;
+    content: "";
+    display: block;
+    height: 65px;
+    margin-top: -32.5px;
+    position: absolute;
+    top: 50%;
+    width: 1px;
+    left: 0;
+}
+#caja_footer::after{
+    background-color: gray;
+    content: "";
+    display: block;
+    height: 65px;
+    margin-top: -32.5px;
+    position: absolute;
+    top: 50%;
+    width: 1px;
+    right: 0;
+}
+#caja_footer img{
+    width: 180px;
+}
 #escudo_footer{
-    left: 70%;
+    grid-column: 3/4;
+}
+#escudo_footer img{
+    width: 180px;;
 }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="/Vista/estilos.css">
+</head>
+<body>
+    <header id="header">
+        <div id="logo_div">
+            <a href="" id="logo"></a>
+        </div>
+        <div id="barra_busqueda">
+            <input type="text" placeholder="Buscar..." id="busqueda_input">
+            <input class="icoLupaBuscar" type="button">
+        </div>
+        <div id="info_cuenta">
+            <a href=""></a>
+        </div>
+        <div id="carrito">
+            <img src="/Assets/carrito.svg" id="carrito_img">
+            <div id="ico_cantidad_productos_carro">
+                <div id="contenido_bola">5</div>
+            </div>
+            <div id="mensajeCarrito">
+                <h3>Carrito</h3>
+            </div>
+        </div>
+    </header>
+<!-----------------------LISTA DE COMPRAS------------>
+    <section class="container">
+        <section id="container_listas">
+            <h2 id="lista_titulo">Cesta de compra (5)</h2>
+            <div class="producto_de_lista">
+                <a class="imagen_producto_lista"href=""></a>
+                <a class="nombre_producto_lista">Cubeta de huevos 6u AA Kikes</a>
+                <button class="bote_de_basura" src="" alt=""></button>
+                <p class="precio_producto">$ 12.320</p>
+                <div class="combo_cantidad">
+                    <button class="botones_cantidad">-</button>
+                    <p>1</p>
+                    <button class="botones_cantidad">+</button>
+                </div>
+            </div>
+            <div class="producto_de_lista">
+                <a class="imagen_producto_lista"href=""></a>
+                <a class="nombre_producto_lista">Bolsa de tomate 10u marca Sierra santa </a>
+                <button class="bote_de_basura" src="" alt=""></button>
+                <p class="precio_producto">$ 12.620</p>
+                <div class="combo_cantidad">
+                    <button class="botones_cantidad">-</button>
+                    <p>1</p>
+                    <button class="botones_cantidad">+</button>
+                </div>
+            </div>
+            <div class="producto_de_lista">
+                <a class="imagen_producto_lista"href=""></a>
+                <a class="nombre_producto_lista">Caja de leche alqueria 200ml</a>
+                <button class="bote_de_basura" src="" alt=""></button>
+                <p class="precio_producto">$ 10.600</p>
+                <div class="combo_cantidad">
+                    <button class="botones_cantidad">-</button>
+                    <p>1</p>
+                    <button class="botones_cantidad">+</button>
+                </div>
+            </div>
+            <div class="producto_de_lista">
+                <a class="imagen_producto_lista"href=""></a>
+                <a class="nombre_producto_lista">Bloque de queso philadelphia 300ml</a>
+                <button class="bote_de_basura" src="" alt=""></button>
+                <p class="precio_producto">$ 8.300</p>
+                <div class="combo_cantidad">
+                    <button class="botones_cantidad">-</button>
+                    <p>1</p>
+                    <button class="botones_cantidad">+</button>
+                </div>
+            </div>
+            <div class="producto_de_lista">
+                <a class="imagen_producto_lista"href=""></a>
+                <a class="nombre_producto_lista">Paquete de salchichas rancheras 5u</a>
+                <button class="bote_de_basura" src="" alt=""></button>
+                <p class="precio_producto">$ 7.900</p>
+                <div class="combo_cantidad">
+                    <button class="botones_cantidad">-</button>
+                    <p>1</p>
+                    <button class="botones_cantidad">+</button>
+                </div>
+            </div>
+        </section>
+        <aside id="container_resumen_lista">
+            <h1 class="titulo_resumen">RESUMEN</h1>
+            <p class="total_parcial">Total parcial: </p>
+            <p class="valor_total_parcial">$55.320</p>
+            <p class="ahorrado">Ahorrado: </p>
+            <p class="valor_ahorrado">$15.910</p>
+            <div class="separador"></div>
+            <p class="total_estimado">Total estimado: </p>
+            <p class="valor_total_estimado">$40.610</p>
+            <button id="boton_hacer_pedido">Hacer pedido</button>   
+        </aside>
+    </section> 
+</body>
+</html>
