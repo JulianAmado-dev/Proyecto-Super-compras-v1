@@ -247,7 +247,7 @@ body{
 /************************************INDEX********************************************/
 #container{
     position: relative;
-    height: 80%;
+    height: 110%;
     width: 100%;
 }
 #banner{
@@ -808,22 +808,71 @@ body{
     display: grid;
     grid-template-columns: 3% 30% 30% 1fr;
     grid-template-rows: 50% 50%;
+    align-items: center;
 }
 #sucursal p{
+    position: relative;
     grid-column: 2/3;
     grid-row: 2/3;
+    height: 50%;
+    
 }
 #sucursal button{
+    position: relative;
     width: 15%;
     height: 80%;
     border-radius: 50%;
-    left: 4%;
+    left: 15%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: transparent;
+    background-image: url(/Assets/ico_mapa.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#domicilio p{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+#modificar_ubicacion{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    margin-top: 0;
+    width: 40%;
+    height: 80%;
+}
+#agregar_ubicacion{
+    left: 50%;
+    margin-top: 0;
+    width: 50%;
+    height: 80%;
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+#ubicacion_punto_de_entrega{
+    position: relative;
+    right: -40%;
     grid-column: 2/3;
     grid-row: 2/3;
 }
+#sucursal p:nth-child(3n+1){
+    display: inline;
+    position: relative;
+    right: 0;
+    margin-right: 10%;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: end;
+}
+#sucursal img{
+    position: relative;
+    width: 8%;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    left: 35%;
+}
 .domicilio-sucursal h4:nth-child(2n+0){
     height: 50%;
-    top: 30%;
     position: relative;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -831,7 +880,6 @@ body{
     font-weight: 100;
     font-size: 1.2rem;
 }
-
 .seleccion_envio-retiro{
     grid-column: 1/2;
     grid-row: 1/2;
@@ -1274,7 +1322,7 @@ body{
     color:black;
     font-weight: 100;
 }
-#agregar_producto{
+.agregar_producto{
     margin-top: 10%;
     border-radius: 20px;
     width: 85%;
