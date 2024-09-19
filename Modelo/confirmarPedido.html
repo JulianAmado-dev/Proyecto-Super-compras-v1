@@ -16,7 +16,7 @@
             rel="stylesheet">
     </head>
     <body>
-<!-----------------------------HEADER-->
+  <!-------------------------------------HEADER------------------------------------------------------->
         <header id="header">
             <div id="logo_div">
                 <a href="../Modelo/index.html" id="logo"></a>
@@ -25,16 +25,17 @@
                 <input type="text" placeholder="Buscar..." id="busqueda_input">
                 <input class="icoLupaBuscar" type="button">
             </div>
-            <div id="info_cuenta">
-                <a href=""></a>
+            <div id="cuadro_info_cuenta">
+                <a id="ico_persona_info-cuenta" href="../Modelo/infoCuenta.html"></a>
             </div>
+
             <div id="carrito">
                 <img src="../Assets/carrito.svg" id="carrito_img">
                 <div id="ico_cantidad_productos_carro">
                     <div id="contenido_bola">5</div>
                 </div>
                 <div id="mensajeCarrito">
-                    <h3>Carrito</h3>
+                    <a href="../Modelo/listaDeCompras.html">Carrito</a>
                 </div>
             </div>
         </header>
@@ -52,6 +53,7 @@
                         <button class="agregar_producto" id="agregar_ubicacion">Agregar Nueva ubicación ></button>
                     </div>
 
+
                     <div id="sucursal" class="domicilio-sucursal">
                         <input type="radio" class="seleccion_envio-retiro">
                         <h4>Entrega en sucursal: </h4>
@@ -67,30 +69,31 @@
                     <h1 id="titulo_metodo_de_pago">Métodos de pago</h1>
                     
                     <input type="radio">
-                    <img class="ico_mapa" src="" alt="">
                     <h2 id="pago_contra_entrega" class="texto_items_de_pago">Pago contra entrega</h2>
     
                     <input type="radio">
-                    <img class="tajeta_metodo_de_pago" src="" alt="">
+                    <img class="tarjeta_metodo_de_pago" id="primer_metodo_de_pago" src="../Assets/tarjeta_metodo.svg" alt="">
                     <h2 id="" class="texto_items_de_pago">5370 68****************4489</h2>
                     
                     <input type="radio">
-                    <img class="tajeta_metodo_de_pago" src="" alt="">
-                    <h2 id="" class="texto_items_de_pago">Añade una nueva tarjeta</h2>
+                    <img class="tarjeta_metodo_de_pago" id="segundo_metodo_de_pago" src="../Assets/tarjeta_metodo.svg" alt="">
+                    <button id="boton_añadir_tarjeta_pago" class="texto_items_de_pago">Añade una nueva tarjeta</button>
                 </section>
                 
             </div>
 <!--------------------RESUMEN---------------->
             <aside class="resumen_confirmacion">
-                <h1>Resumen</h1>
-                <h3 id="titulo_subtotal">Subtotal: </h2>
-                <p id="valor_subtotal">$40.610</p>
+                <h1 id="titulo_resumen_confirmar">Resumen</h1>
+                <h3 id="titulo_subtotal" class="titulo_valor_resumen">Subtotal:</h3>
+                <p id="valor_subtotal" class="valores_resumen_confirmar">$40.610</p>
 
-                <h3 id="titulo_total_envio">Total de envio: </h2>
-                <p id="valor_total_envio">$5.900</p>
+                <h3 id="titulo_total_envio" class="titulo_valor_resumen">Total de envio:</h3>
+                <p id="valor_total_envio" class="valores_resumen_confirmar">$5.900</p>
                 
-                <h2 id="titulo_total_confirmacion">Total: </h2>
-                <p id="valor_total_confirmacion">$46.610</p>
+                <h3 id="titulo_total_confirmacion" class="titulo_valor_resumen">Total: </h3>
+                <p id="valor_total_confirmacion" class="valores_resumen_confirmar">$46.610</p>
+
+                <button id="boton_confirmar_pedido">confirmar pedido</button>
             </aside>
         </section>
 <!---------------------------------------FOOTER-------------------->

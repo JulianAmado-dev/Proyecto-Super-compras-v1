@@ -176,6 +176,22 @@ body{
     background-size: 120px;
     background-position: center;
 }
+#cuadro_info_cuenta{
+    width: 5%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+#ico_persona_info-cuenta{
+    position: relative;
+    display: flex;
+
+    width: 100%;
+    height: 80%;
+    background-image: url(../Assets/ico_persona.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 /************************************NAV**************************************************/
 #nav{
     position: relative;
@@ -802,6 +818,16 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50% 50%;
+    border-radius: 25px;
+}
+.metodo_de_pago::before{
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #BC8741;
+    top: -8%;
 }
 .domicilio-sucursal{
     position: relative;
@@ -815,7 +841,6 @@ body{
     grid-column: 2/3;
     grid-row: 2/3;
     height: 50%;
-    
 }
 #sucursal button{
     position: relative;
@@ -834,6 +859,16 @@ body{
     grid-column: 3/4;
     grid-row: 2/3;
 }
+#domicilio::after{
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: #BC8741;
+    grid-row: 4;
+    grid-column: 1/5;
+}
 #modificar_ubicacion{
     grid-column: 4/5;
     grid-row: 2/3;
@@ -844,7 +879,7 @@ body{
 #agregar_ubicacion{
     left: 50%;
     margin-top: 0;
-    width: 50%;
+    width: 52%;
     height: 80%;
     grid-column: 4/5;
     grid-row: 2/3;
@@ -863,6 +898,12 @@ body{
     grid-column: 4/5;
     grid-row: 2/3;
     text-align: end;
+}
+#nombre_ubicacion_usuario{
+    position: relative;
+    text-align: end;
+    right: 10%;
+    font-weight: 500;
 }
 #sucursal img{
     position: relative;
@@ -886,27 +927,92 @@ body{
     align-items: center;
 }
 .metodo_de_pago{
-    position: absolute;
+    position: relative;
     display: grid;
-    margin: 1% 2.5% 1% 5%;
+    margin: 4% 2.5% 1% 5%;
     width: 90%;
     height: 35%;
-    top: 40%;
-    padding: 1% 4%;
+    padding: 2% 4%;
     background-color: #DDBE96;
+    border-radius: 25px;
+    align-items: center;
+
+    grid-template-columns: 3% 7% 1fr;
+    grid-template-rows: 20% repeat(3,1fr); 
+}
+#titulo_metodo_de_pago{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.tarjeta_metodo_de_pago{
+    position: relative;
+    left: 15%;
+    width: 70%;
+}
+#primer_metodo_de_pago{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#segundo_metodo_de_pago{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.texto_items_de_pago{
+    margin-left: 3%;
+    font-size: 1.2rem;
+}
+#pago_contra_entrega{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    margin-left: 10%;
+}
+#boton_añadir_tarjeta_pago{
+    position: relative;
+    width: 40%;
+    background-color: transparent;
+    color: #004d29;
+    font-weight: 700;
+    border: transparent;
 }
 .resumen_confirmacion{
     display: grid;
     position: relative;
     background-color: #DDBE96;
-    width: 24%;
-    height: 25%;
-    margin: 1% 10% 0 0;
+    width: 40%;
+    height: 50%;
+    margin: 5% 5% 0 0;
+    padding: 2.5%;
     border-radius: 25px;
     overflow: hidden;
+    align-items: center;
 
     grid-template-columns: 60% 40%;
     grid-template-rows: 25% 20% 20% 15% 20%;
+}
+#titulo_resumen_confirmar{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: 2.5rem;
+}
+.resumen_confirmacion button{
+    padding: 1.5%;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    background-color: #BC8741;
+    border: transparent;
+    position: relative;
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+.valores_resumen_confirmar{
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.titulo_valor_resumen{
+    font-weight: 100;
+    font-size: 1.3rem;
 }
 /**********************************INICIAR SESION*******/
 .container_sesion_crear{
