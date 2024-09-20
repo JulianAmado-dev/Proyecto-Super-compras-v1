@@ -1390,6 +1390,14 @@ body{
 #codigo_empleado::placeholder{
     color: #004D29;
 }
+#btn_codigo_empleado_sc{
+    text-decoration: none;
+    height: 20%;
+    text-align: center;
+    padding: 1.5%;
+    right: 35%;
+    top: 70%;
+}
 /**********************************PERSONAL BODEGA*****************/
 #container_bodega_entrega{
     width:100%;
